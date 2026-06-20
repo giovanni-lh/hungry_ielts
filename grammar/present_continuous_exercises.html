@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Thì Hiện tại Tiếp diễn — English Academy</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --success: #16a34a;
+            --success-bg: #f0fdf4;
+            --success-border: #bbf7d0;
+            --danger: #dc2626;
+            --danger-bg: #fef2f2;
+            --danger-border: #fecaca;
+            --warning: #d97706;
+            --warning-bg: #fffbeb;
+            --border: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--text-main);
+            margin: 0;
+            background: #f8fafc;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .header-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        }
+
+        .header-card h2 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.6rem;
+            color: #0f172a;
+        }
+
+        .header-card p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            color: #0f172a;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Grid Layout cho câu hỏi */
+        .quiz-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        @media (min-width: 768px) {
+            .quiz-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .question-text {
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #334155;
+        }
+
+        .question-num {
+            color: var(--primary);
+            font-weight: bold;
+            margin-right: 0.25rem;
+        }
+
+        /* Tùy chọn Trắc nghiệm */
+        .options-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .option-label {
+            display: flex;
+            align-items: center;
+            padding: 0.6rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.15s;
+        }
+
+        .option-label:hover {
+            background: var(--bg-light);
+        }
+
+        .option-label input {
+            margin-right: 0.5rem;
+        }
+
+        /* Ô nhập văn bản cho tự luận */
+        .text-input {
+            width: 100%;
+            padding: 0.6rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+            font-family: inherit;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        /* Hộp phản hồi kết quả */
+        .feedback {
+            margin-top: 0.75rem;
+            padding: 0.6rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            display: none;
+        }
+
+        .feedback.correct {
+            display: block;
+            background: var(--success-bg);
+            border: 1px solid var(--success-border);
+            color: var(--success);
+            font-weight: 500;
+        }
+
+        .feedback.wrong {
+            display: block;
+            background: var(--danger-bg);
+            border: 1px solid var(--danger-border);
+            color: var(--danger);
+        }
+
+        .explanation {
+            margin-top: 0.25rem;
+            color: var(--warning);
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        /* Thanh điều khiển & Điểm số */
+        .control-panel {
+            position: sticky;
+            bottom: 0;
+            background: #ffffff;
+            border-top: 1px solid var(--border);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2.5rem;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+            z-index: 100;
+        }
+
+        .score-box {
+            font-weight: bold;
+            font-size: 1.05rem;
+        }
+
+        .btn {
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .btn-submit {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .btn-submit:hover {
+            background: var(--primary-hover);
+        }
+
+        .btn-reset {
+            background: #e2e8f0;
+            color: #475569;
+        }
+
+        .btn-reset:hover {
+            background: #cbd5e1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="#">Trang chủ</a> ➔ <a href="#">Ngữ pháp</a> ➔ Bài tập Hiện tại Tiếp diễn
+        </div>
+
+        <section class="header-card">
+            <h2>Bài tập: Present Continuous Tense</h2>
+            <p>Kiểm tra và củng cố kiến thức về cấu trúc, cách dùng và quy tắc chính tả của thì Hiện tại tiếp diễn.</p>
+        </section>
+
+        <form id="quizForm">
+            <div class="quiz-grid" id="fitbContainer"></div>
+        </form>
+    </main>
+
+    <div class="control-panel">
+        <div class="score-box" id="scoreDisplay">Kết quả: --/-- (0%)</div>
+        <div>
+            <button type="button" class="btn btn-reset" onclick="resetQuiz()">Làm lại</button>
+            <button type="button" class="btn btn-submit" onclick="gradeQuiz()">Kiểm tra kết quả</button>
+        </div>
+    </div>
+
+    <script>
+        // Object dữ liệu câu hỏi giả định trích xuất từ ảnh học liệu của bạn
+        const presentContinuousExercises = [
+            // ==========================================
+            // SECTION A: MULTIPLE CHOICE (TRẮC NGHIỆM)
+            // ==========================================
+            {
+                id: "A1",
+                question: "1. Look! The bus ___.",
+                options: ["come", "comes", "is coming", "are coming"],
+                answer: "is coming",
+                explanation: "Câu mệnh lệnh 'Look!' chỉ hành động diễn ra lúc nói. Chủ ngữ số ít 'The bus' đi với cụm động từ 'is coming'."
+            },
+            {
+                id: "A2",
+                question: "2. I ___ a letter at the moment.",
+                options: ["write", "am writing", "is writing", "writing"],
+                answer: "am writing",
+                explanation: "Dấu hiệu trạng từ 'at the moment' (ngay lúc này). Chủ ngữ ngôi thứ nhất 'I' đi kèm 'am writing'."
+            },
+            {
+                id: "A3",
+                question: "3. They ___ football now.",
+                options: ["play", "are playing", "is playing", "plays"],
+                answer: "are playing",
+                explanation: "Dấu hiệu trạng ngữ thời gian 'now'. Chủ ngữ số nhiều 'They' đi kèm 'are playing'."
+            },
+            {
+                id: "A4",
+                question: "4. She ___ TV right now.",
+                options: ["watch", "watches", "is watching", "are watching"],
+                answer: "is watching",
+                explanation: "Dấu hiệu trạng từ nhấn mạnh 'right now'. Chủ ngữ ngôi thứ ba số ít 'She' đi kèm 'is watching'."
+            },
+            {
+                id: "A5",
+                question: "5. Listen! Someone ___.",
+                options: ["sing", "sings", "is singing", "are singing"],
+                answer: "is singing",
+                explanation: "Câu gây chú ý 'Listen!'. Đại từ bất định ngôi thứ ba số ít 'Someone' đi với động từ chia 'is singing'."
+            },
+            {
+                id: "A6",
+                question: "6. We ___ for the bus now.",
+                options: ["wait", "are waiting", "is waiting", "waits"],
+                answer: "are waiting",
+                explanation: "Dấu hiệu nhận biết 'now'. Chủ ngữ ngôi thứ nhất số nhiều 'We' đi kèm cấu trúc 'are waiting'."
+            },
+            {
+                id: "A7",
+                question: "7. He ___ at the moment.",
+                options: ["sleep", "sleeps", "is sleeping", "are sleeping"],
+                answer: "is sleeping",
+                explanation: "Trạng ngữ chỉ thời gian diễn tiến 'at the moment'. Chủ ngữ số ít 'He' tương ứng với trợ động từ 'is'."
+            },
+            {
+                id: "A8",
+                question: "8. ___ you listening to me?",
+                options: ["Is", "Am", "Are", "Do"],
+                answer: "Are",
+                explanation: "Cấu trúc nghi vấn của thì Hiện tại tiếp diễn: [To be] + S + V-ing? Với đại từ 'you', ta dùng 'Are'."
+            },
+            {
+                id: "A9",
+                question: "9. The children ___ in the garden.",
+                options: ["is playing", "are playing", "play", "plays"],
+                answer: "are playing",
+                explanation: "Hành động đang xảy ra tại hiện trường. Chủ ngữ danh từ số nhiều 'The children' đòi hỏi hệ từ số nhiều 'are'."
+            },
+            {
+                id: "A10",
+                question: "10. It ___ outside, take an umbrella.",
+                options: ["rain", "rains", "is raining", "are raining"],
+                answer: "is raining",
+                explanation: "Ngữ cảnh mệnh lệnh 'take an umbrella' biểu thị trời đang mưa. Chủ ngữ giả 'It' đi với cấu trúc 'is raining'."
+            },
+            {
+                id: "A11",
+                question: "11. My mom ___ dinner now.",
+                options: ["cook", "is cooking", "cooks", "are cooking"],
+                answer: "is cooking",
+                explanation: "Trạng từ thời gian 'now'. Chủ ngữ chỉ người số ít 'My mom' đi với cấu trúc 'is cooking'."
+            },
+            {
+                id: "A12",
+                question: "12. I ___ a great book these days.",
+                options: ["read", "reads", "am reading", "is reading"],
+                answer: "am reading",
+                explanation: "Trạng từ 'these days' biểu thị một hành động kéo dài mang tính tạm thời quanh thời điểm hiện tại."
+            },
+            {
+                id: "A13",
+                question: "13. ___ she working today?",
+                options: ["Do", "Does", "Is", "Are"],
+                answer: "Is",
+                explanation: "Thể nghi vấn tiếp diễn cho hành động tạm thời trong ngày 'today'. Chủ ngữ số ít 'she' sử dụng trợ từ 'Is'."
+            },
+            {
+                id: "A14",
+                question: "14. We ___ to Hue next week.",
+                options: ["travel", "are travelling", "is travelling", "travels"],
+                answer: "are travelling",
+                explanation: "Thì Hiện tại tiếp diễn dùng để biểu thị một kế hoạch, lịch trình chắc chắn đã được sắp xếp trước cho tương lai."
+            },
+            {
+                id: "A15",
+                question: "15. He ___ his homework right now.",
+                options: ["do", "does", "is doing", "are doing"],
+                answer: "is doing",
+                explanation: "Dấu hiệu rõ ràng 'right now'. Động từ chính 'do' kết hợp cấu trúc tiếp diễn với chủ ngữ số ít 'He'."
+            },
+            {
+                id: "A16",
+                question: "16. The dogs ___ loudly.",
+                options: ["is barking", "are barking", "bark", "barks"],
+                answer: "are barking",
+                explanation: "Hành động trực quan tại thời điểm nói. Danh từ số nhiều có đuôi '-s' ('The dogs') yêu cầu đi cùng 'are barking'."
+            },
+            {
+                id: "A17",
+                question: "17. I'm sorry, I ___ you.",
+                options: ["am not hearing", "don't hear", "isn't hearing", "not hear"],
+                answer: "don't hear",
+                explanation: "'hear' thuộc nhóm động từ trạng thái nhận thức (stative verb), không chia tiếp diễn; phải dùng hiện tại đơn."
+            },
+            {
+                id: "A18",
+                question: "18. What ___ you doing?",
+                options: ["is", "am", "are", "do"],
+                answer: "are",
+                explanation: "Cấu trúc từ hỏi thông tin: Wh-word + [am/is/are] + S + V-ing? Đại từ chủ ngữ 'you' chọn trợ động từ 'are'."
+            },
+            {
+                id: "A19",
+                question: "19. Be careful! You ___ too fast.",
+                options: ["drive", "drives", "are driving", "is driving"],
+                answer: "are driving",
+                explanation: "Lời nhắc nhở khẩn cấp 'Be careful!' chứng tỏ hành động lái xe nguy hiểm đang diễn ra liên tục."
+            },
+            {
+                id: "A20",
+                question: "20. She ___ a beautiful dress today.",
+                options: ["wear", "wears", "is wearing", "are wearing"],
+                answer: "is wearing",
+                explanation: "Trạng từ 'today' chỉ tính chất thời trang hoặc trạng thái ăn mặc thay đổi tạm thời trong ngày hôm nay."
+            },
+            {
+                id: "A21",
+                question: "21. The students ___ a test now.",
+                options: ["take", "takes", "are taking", "is taking"],
+                answer: "are taking",
+                explanation: "Dấu hiệu thời gian 'now'. Danh từ số nhiều chỉ người số đông 'The students' kết hợp cấu trúc số nhiều 'are taking'."
+            },
+            {
+                id: "A22",
+                question: "22. Why ___ you crying?",
+                options: ["is", "do", "are", "does"],
+                answer: "are",
+                explanation: "Cấu trúc nghi vấn có từ để hỏi 'Why'. Với chủ ngữ mang tính đối thoại trực tiếp 'you', trợ động từ thích hợp là 'are'."
+            },
+            {
+                id: "A23",
+                question: "23. My brother ___ to music right now.",
+                options: ["listen", "listens", "is listening"],
+                answer: "is listening",
+                explanation: "Dấu hiệu thời gian 'right now'. Chủ ngữ số ít tương ứng ngôi thứ ba 'My brother' đi kèm 'is listening'."
+            },
+            {
+                id: "A24",
+                question: "24. Prices ___ these days.",
+                options: ["rise", "rises", "are rising"],
+                answer: "are rising",
+                explanation: "Dấu hiệu cụm từ 'these days' biểu thị tiến trình biến động mang xu thế xã hội tăng giảm liên tục."
+            },
+            {
+                id: "A25",
+                question: "25. I ___ now, call me later.",
+                options: ["am working", "work", "works"],
+                answer: "am working",
+                explanation: "Mệnh đề yêu cầu 'call me later' (hãy gọi lại sau) chứng minh chủ thể đang bận làm việc ngay lúc nói."
+            },
+            {
+                id: "A26",
+                question: "26. ___ it snowing in the mountains?",
+                options: ["Do", "Does", "Is", "Are"],
+                answer: "Is",
+                explanation: "Câu hỏi dạng đảo ngữ cho hiện tượng thời tiết. Chủ ngữ số ít không xác định 'it' đòi hỏi hệ từ đứng đầu là 'Is'."
+            },
+            {
+                id: "A27",
+                question: "27. They ___ a new house at the moment.",
+                options: ["build", "builds", "are building"],
+                answer: "are building",
+                explanation: "Trạng từ chỉ tính thời điểm 'at the moment'. Diễn tả dự án đang thực hiện, đi với cấu trúc số nhiều 'are building'."
+            },
+            {
+                id: "A28",
+                question: "28. He ___ his keys all the time! (phàn nàn)",
+                options: ["loses", "is always losing", "always lose", "is losing always"],
+                answer: "is always losing",
+                explanation: "Sử dụng cấu trúc tiếp diễn kết hợp với trạng từ tần suất 'always' nhằm diễn đạt tâm lý phàn nàn về tật xấu lặp lại."
+            },
+            {
+                id: "A29",
+                question: "29. We ___ a movie now.",
+                options: ["watch", "are watching", "is watching", "watches"],
+                answer: "are watching",
+                explanation: "Dấu hiệu trạng từ chỉ thời gian thực tế 'now'. Đi cùng chủ ngữ số nhiều đại diện tập thể 'We'."
+            },
+            {
+                id: "A30",
+                question: "30. Where ___ your father going?",
+                options: ["is", "are", "do", "am"],
+                answer: "is",
+                explanation: "Cấu trúc nghi vấn từ hỏi không gian vị trí. 'your father' là danh từ ngôi thứ ba số ít tương ứng hệ từ 'is'."
+            },
+
+            // ==========================================
+            // SECTION B: SPELLING GERUND FORMS (V-ING ĐÚNG CHÍNH TẢ)
+            // ==========================================
+            {
+                id: "B1",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: play -> ___",
+                answer: "playing",
+                explanation: "Động từ kết thúc bằng nguyên âm + 'y', chỉ cần thêm hậu tố '-ing' trực tiếp bình thường."
+            },
+            {
+                id: "B2",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: make -> ___",
+                answer: "making",
+                explanation: "Quy tắc chính tả: Động từ tận cùng bằng chữ 'e' câm, ta thực hiện bỏ 'e' trước khi thêm hậu tố '-ing'."
+            },
+            {
+                id: "B3",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: run -> ___",
+                answer: "running",
+                explanation: "Từ một âm tiết cấu trúc CVC (Phụ âm - Nguyên âm ngắn - Phụ âm), cần nhân đôi phụ âm cuối trước khi thêm '-ing'."
+            },
+            {
+                id: "B4",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: write -> ___",
+                answer: "writing",
+                explanation: "Động từ kết thúc bằng âm 'e' câm, ta tiến hành lược bỏ chữ cái 'e' rồi mới ghép phần đuôi '-ing'."
+            },
+            {
+                id: "B5",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: sit -> ___",
+                answer: "sitting",
+                explanation: "Động từ ngắn đơn âm tiết kết thúc dạng cấu tạo Phụ âm + Nguyên âm + Phụ âm; thực hiện gấp đôi âm cuối 't'."
+            },
+            {
+                id: "B6",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: study -> ___",
+                answer: "studying",
+                explanation: "Động từ kết thúc bằng chữ 'y' (kể cả sau phụ âm) giữ nguyên toàn bộ gốc chữ rồi thêm trực tiếp đuôi '-ing'."
+            },
+            {
+                id: "B7",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: lie -> ___",
+                answer: "lying",
+                explanation: "Quy tắc chính tả đặc biệt: Động từ kết thúc bằng tổ hợp nguyên âm '-ie', đổi cụm này thành 'y' rồi thêm '-ing'."
+            },
+            {
+                id: "B8",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: swim -> ___",
+                answer: "swimming",
+                explanation: "Động từ một âm tiết có cấu tạo kết thúc Phụ âm + Nguyên âm + Phụ âm, bắt buộc phải viết nhân đôi chữ 'm'."
+            },
+            {
+                id: "B9",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: come -> ___",
+                answer: "coming",
+                explanation: "Tận cùng là một chữ cái 'e' không phát âm (âm câm), bỏ chữ cái này đi rồi thêm hậu tố tiếp diễn '-ing'."
+            },
+            {
+                id: "B10",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: go -> ___",
+                answer: "going",
+                explanation: "Động từ cơ bản kết thúc bằng nguyên âm thông thường, thêm đuôi '-ing' trực tiếp không biến đổi gốc từ."
+            },
+            {
+                id: "B11",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: begin -> ___",
+                answer: "beginning",
+                explanation: "Từ hai âm tiết, trọng âm rơi vào âm tiết cuối cùng kết thúc bằng CVC. Ta bắt buộc phải nhân đôi phụ âm cuối 'n'."
+            },
+            {
+                id: "B12",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: stop -> ___",
+                answer: "stopping",
+                explanation: "Động từ đơn có cấu tạo âm tiết ngắn chứa một nguyên âm kẹp giữa các phụ âm. Gấp đôi ký tự cuối 'p' rồi thêm '-ing'."
+            },
+            {
+                id: "B13",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: read -> ___",
+                answer: "reading",
+                explanation: "Chứa nguyên âm đôi 'ea' đứng trước phụ âm cuối, không thỏa mãn quy tắc cấu trúc âm ngắn CVC nên thêm thẳng '-ing'."
+            },
+            {
+                id: "B14",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: cook -> ___",
+                answer: "cooking",
+                explanation: "Đằng trước phụ âm cuối có nguyên âm đôi 'oo' đứng liền nhau, thêm hậu tố '-ing' trực tiếp giữ nguyên cấu trúc."
+            },
+            {
+                id: "B15",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: die -> ___",
+                answer: "dying",
+                explanation: "Quy tắc đặc thù: Gốc từ kết thúc bằng tổ hợp hai nguyên âm liền kề '-ie' chuyển đổi thành 'y' rồi thêm '-ing'."
+            },
+            {
+                id: "B16",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: take -> ___",
+                answer: "taking",
+                explanation: "Động từ kết thúc bằng đuôi chữ cái 'e' câm, tiến hành lược bỏ ký tự này đi trước khi gắn kết hậu tố '-ing'."
+            },
+            {
+                id: "B17",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: get -> ___",
+                answer: "getting",
+                explanation: "Động từ đơn tính chất ngắn, khép kín bằng cấu trúc kết thúc Phụ âm - Nguyên âm ngắn - Phụ âm; gấp đôi chữ 't'."
+            },
+            {
+                id: "B18",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: open -> ___",
+                answer: "opening",
+                explanation: "Từ có hai âm tiết nhưng trọng âm rơi vào âm đầu ('open), do đó không áp dụng quy tắc nhân đôi phụ âm cuối."
+            },
+            {
+                id: "B19",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: listen -> ___",
+                answer: "listening",
+                explanation: "Trọng âm nhấn vào âm tiết thứ nhất ('listen), tận cùng là một phụ âm nhưng không nhân đôi vì không nhận trọng âm chính."
+            },
+            {
+                id: "B20",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: fix -> ___",
+                answer: "fixing",
+                explanation: "Ngoại lệ quy tắc chính tả: Động từ tận cùng bằng ký tự đặc biệt 'x' (hoặc 'w', 'y') thì không bao giờ nhân đôi phụ âm."
+            },
+            {
+                id: "B21",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: travel -> ___",
+                answer: "travelling",
+                explanation: "Theo quy chuẩn chính tả tiếng Anh - Anh (British English), động từ kết thúc bằng phụ âm 'l' luôn luôn được nhân đôi."
+            },
+            {
+                id: "B22",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: shop -> ___",
+                answer: "shopping",
+                explanation: "Động từ ngắn một âm tiết, chứa nguyên âm ngắn đứng giữa các phụ âm. Bắt buộc gấp đôi chữ cái 'p' rồi gắn đuôi '-ing'."
+            },
+            {
+                id: "B23",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: dance -> ___",
+                answer: "dancing",
+                explanation: "Tận cùng là chữ cái nguyên âm 'e' không phát âm (âm câm), bỏ chữ này đi trước khi thêm phần mở rộng '-ing'."
+            },
+            {
+                id: "B24",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: win -> ___",
+                answer: "winning",
+                explanation: "Từ đơn kết thúc theo công thức một phụ âm sau một nguyên âm ngắn. Nhân đôi ký tự kết thúc 'n' thành dạng 'nn'."
+            },
+            {
+                id: "B25",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: snow -> ___",
+                answer: "snowing",
+                explanation: "Ngoại lệ quy tắc chính tả: Ký tự kết thúc là bán nguyên âm 'w' không tính nhân đôi phụ âm khi gắn đuôi '-ing'."
+            },
+            {
+                id: "B26",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: have -> ___",
+                answer: "having",
+                explanation: "Động từ thông dụng có tận cùng kết thúc bằng âm câm chữ 'e', tiến hành lược bỏ ký tự này rồi gắn hậu tố '-ing'."
+            },
+            {
+                id: "B27",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: cut -> ___",
+                answer: "cutting",
+                explanation: "Từ ngắn một âm tiết đáp ứng mô hình kết thúc Phụ âm - Nguyên âm ngắn - Phụ âm. Nhân đôi ký tự 't' thành 'tt'."
+            },
+            {
+                id: "B28",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: carry -> ___",
+                answer: "carrying",
+                explanation: "Từ tận cùng bằng chữ cái 'y', giữ nguyên nguyên bản chữ cái này rồi trực tiếp nối đuôi tiếp diễn '-ing'."
+            },
+            {
+                id: "B29",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: drive -> ___",
+                answer: "driving",
+                explanation: "Bỏ ký tự nguyên âm câm chữ 'e' ở cuối từ trước khi áp dụng công thức gắn liên kết đuôi động tính từ '-ing'."
+            },
+            {
+                id: "B30",
+                question: "Biến đổi dạng V-ing chính tả cho động từ: put -> ___",
+                answer: "putting",
+                explanation: "Động từ ngắn đơn âm đáp ứng quy tắc tận cùng Phụ âm - Nguyên âm ngắn - Phụ âm. Nhân đôi chữ cái cuối cùng 't'."
+            },
+
+            // ==========================================
+            // SECTION C: FILL IN TO-BE VERBS (ĐIỀN AM / IS / ARE)
+            // ==========================================
+            {
+                id: "C1",
+                question: "Điền am/is/are: I ___ studying English now.",
+                answer: "am",
+                explanation: "Đại từ nhân xưng chủ ngữ ngôi thứ nhất số ít 'I' luôn luôn đi liền với dạng hệ từ 'am'."
+            },
+            {
+                id: "C2",
+                question: "Điền am/is/are: She ___ cooking dinner.",
+                answer: "is",
+                explanation: "Chủ ngữ đại từ ngôi thứ ba số ít diện nữ giới 'She' đi kèm hình thái hệ từ số ít 'is'."
+            },
+            {
+                id: "C3",
+                question: "Điền am/is/are: They ___ playing in the park.",
+                answer: "are",
+                explanation: "Chủ ngữ ngôi thứ ba số nhiều đại diện tập thể số đông 'They' tương thích hình thái số nhiều 'are'."
+            },
+            {
+                id: "C4",
+                question: "Điền am/is/are: He ___ sleeping at the moment.",
+                answer: "is",
+                explanation: "Chủ ngữ ngôi thứ ba số ít diện nam giới 'He' kết hợp hệ từ số ít 'is' trong thì Hiện tại tiếp diễn."
+            },
+            {
+                id: "C5",
+                question: "Điền am/is/are: We ___ watching a film.",
+                answer: "are",
+                explanation: "Chủ ngữ đại từ ngôi thứ nhất số nhiều đại diện nhóm 'We' đồng hành trợ động từ hệ thống 'are'."
+            },
+            {
+                id: "C6",
+                question: "Điền am/is/are: It ___ raining outside.",
+                answer: "is",
+                explanation: "Đại từ trung tính dùng làm chủ ngữ chỉ thiên nhiên/thời tiết 'It' luôn đi liền với trợ động từ 'is'."
+            },
+            {
+                id: "C7",
+                question: "Điền am/is/are: You ___ doing great!",
+                answer: "are",
+                explanation: "Đại từ chủ ngữ chỉ đối phương giao tiếp trực tiếp 'You' (dù là số ít hay số nhiều) luôn đi với 'are'."
+            },
+            {
+                id: "C8",
+                question: "Điền am/is/are: The kids ___ drawing pictures.",
+                answer: "are",
+                explanation: "Danh từ chủ từ có dạng thức số nhiều biểu đạt số lượng lớn hơn một ('The kids') yêu cầu dùng 'are'."
+            },
+            {
+                id: "C9",
+                question: "Điền am/is/are: Lan ___ reading a book.",
+                answer: "is",
+                explanation: "Tên riêng cá nhân đóng vai trò chủ ngữ danh từ riêng số ít ('Lan') đi kèm trợ từ 'is'."
+            },
+            {
+                id: "C10",
+                question: "Điền am/is/are: My parents ___ working in the garden.",
+                answer: "are",
+                explanation: "Cụm danh từ chứa hậu tố số nhiều xác định hai người ('My parents') đi kèm hình thái số nhiều 'are'."
+            },
+            {
+                id: "C11",
+                question: "Điền am/is/are: I ___ not listening to music.",
+                answer: "am",
+                explanation: "Dạng phủ định tiếp diễn cho ngôi thứ nhất số ít: I + am + not + V-ing. Vị trí trống cần điền trợ từ 'am'."
+            },
+            {
+                id: "C12",
+                question: "Điền am/is/are: The dog ___ running fast.",
+                answer: "is",
+                explanation: "Danh từ số ít chỉ động vật không chứa đuôi danh từ số nhiều ('The dog') đi liền hệ từ số ít 'is'."
+            },
+            {
+                id: "C13",
+                question: "Điền am/is/are: Tom and ___ studying together.",
+                answer: "are",
+                explanation: "Chủ ngữ phức hợp liên kết bằng liên từ 'and' cấu thành chủ thể số nhiều, dùng động từ hệ thống 'are'."
+            },
+            {
+                id: "C14",
+                question: "Điền am/is/are: The baby ___ crying.",
+                answer: "is",
+                explanation: "Danh từ đếm được dạng nguyên thể biểu đạt duy nhất một cá thể nhỏ ('The baby') kết hợp hệ từ số ít 'is'."
+            },
+            {
+                id: "C15",
+                question: "Điền am/is/are: What ___ you doing?",
+                answer: "are",
+                explanation: "Cấu trúc đảo từ để hỏi dạng tiếp diễn với đại từ trung tâm 'you' đòi hỏi vị trí khuyết là hệ từ 'are'."
+            },
+
+            // ==========================================
+            // SECTION D: INTERROGATIVE & NEGATIVE FILL-INS (HOÀN THÀNH CÂU HỎI / PHỦ ĐỊNH)
+            // ==========================================
+            {
+                id: "D1",
+                question: "Hoàn thành: ___ she sleeping now?",
+                answer: "Is",
+                explanation: "Đảo trợ động từ lên đầu câu làm câu hỏi Yes/No. Chủ ngữ ngôi thứ ba số ít 'she' yêu cầu sử dụng từ 'Is'."
+            },
+            {
+                id: "D2",
+                question: "Hoàn thành: ___ they coming to the party?",
+                answer: "Are",
+                explanation: "Cấu trúc nghi vấn đảo ngữ Yes/No dành cho chủ từ số nhiều đại diện tập hợp 'they' bắt buộc điền 'Are'."
+            },
+            {
+                id: "D3",
+                question: "Hoàn thành: He is ___ working today.",
+                answer: "not",
+                explanation: "Cấu trúc câu phủ định thì Hiện tại tiếp diễn: S + to be + not + V-ing. Vị trí đứng sau trợ động từ điền 'not'."
+            },
+            {
+                id: "D4",
+                question: "Hoàn thành: Are you ___ this?",
+                answer: "watching",
+                explanation: "Cú pháp câu hỏi tiếp diễn đã có trợ động từ 'Are' đầu câu, vị trí trống cần điền phân từ hiện tại V-ing 'watching'."
+            },
+            {
+                id: "D5",
+                question: "Hoàn thành: Is your brother ___?",
+                answer: "studying",
+                explanation: "Thành phần động từ chính trong câu nghi vấn tiếp diễn sau khi có chủ ngữ 'your brother' phải ở dạng V-ing: 'studying'."
+            },
+            {
+                id: "D6",
+                question: "Hoàn thành: We are ___ leaving yet.",
+                answer: "not",
+                explanation: "Cụm từ phủ định trạng thái chưa rời đi kết hợp trạng từ nhấn mạnh 'yet': bổ sung thành tố phủ định 'not'."
+            },
+            {
+                id: "D7",
+                question: "Hoàn thành: ___ it raining?",
+                answer: "Is",
+                explanation: "Câu hỏi Yes/No ngắn về tình trạng thiên nhiên. Chủ từ trống không 'it' đòi hỏi đảo trợ động từ 'Is' lên đầu câu."
+            },
+            {
+                id: "D8",
+                question: "Hoàn thành: She is ___ listening to me.",
+                answer: "not",
+                explanation: "Câu phủ định phản ánh trạng thái không tập trung lắng nghe: Chèn từ 'not' vào giữa hệ động từ 'is' và V-ing."
+            },
+            {
+                id: "D9",
+                question: "Hoàn thành: Am I ___ it right?",
+                answer: "doing",
+                explanation: "Câu hỏi tự vấn cấu trúc tiếp diễn: Am + I + V-ing? Động từ hành động hợp ngữ cảnh làm việc/thực hiện là 'doing'."
+            },
+            {
+                id: "D10",
+                question: "Hoàn thành: Are the children ___ outside?",
+                answer: "playing",
+                explanation: "Hoàn thiện câu hỏi hành động ngoài trời của trẻ nhỏ. Dạng phân từ V-ing của động từ 'play' là 'playing'."
+            },
+            {
+                id: "D11",
+                question: "Hoàn thành: The phone is ___ working.",
+                answer: "not",
+                explanation: "Thông báo thiết bị hỏng hóc, không hoạt động tạm thời dưới dạng phủ định tiếp diễn: điền phó từ phủ định 'not'."
+            },
+            {
+                id: "D12",
+                question: "Hoàn thành: Are your friends ___ for you?",
+                answer: "waiting",
+                explanation: "Bổ sung thành phần động từ chính cho câu hỏi chờ đợi ai đó: Động từ 'wait' chuyển đổi chính xác sang V-ing 'waiting'."
+            },
+            {
+                id: "D13",
+                question: "Hoàn thành: They are ___ joking.",
+                answer: "not",
+                explanation: "Lời khẳng định mang sắc thái nghiêm túc (họ không trêu đùa đâu): Cần thêm phó từ phủ định 'not' đứng trước 'joking'."
+            },
+            {
+                id: "D14",
+                question: "Hoàn thành: Is the bus ___?",
+                answer: "coming",
+                explanation: "Câu hỏi sự di chuyển tịnh tiến đến gần của phương tiện giao thông công cộng. Điền dạng từ động năng V-ing 'coming'."
+            },
+            {
+                id: "D15",
+                question: "Hoàn thành: I am ___ feeling well today.",
+                answer: "not",
+                explanation: "Diễn tả trạng thái sức khỏe suy yếu tạm thời mang tính phủ định trong ngày: Đứng sau trợ động từ 'am' điền từ 'not'."
+            },
+
+            // ==========================================
+            // SECTION E: TRANSFORMATION TO NEGATIVE SENTENCES (VIẾT LẠI CÂU PHỦ ĐỊNH)
+            // ==========================================
+            {
+                id: "E1",
+                question: "Chuyển sang phủ định: She is cooking dinner.",
+                answer: "She isn't cooking dinner.",
+                explanation: "Thêm thành tố phủ định vào sau trợ động từ, viết rút gọn 'is not' thành hình thái chuẩn ngữ pháp 'isn't'."
+            },
+            {
+                id: "E2",
+                question: "Chuyển sang phủ định: They are playing football.",
+                answer: "They aren't playing football.",
+                explanation: "Thực hiện biến đổi thể phủ định bằng cách chuyển đổi hệ động từ số nhiều dạng khẳng định 'are' thành dạng rút gọn 'aren't'."
+            },
+            {
+                id: "E3",
+                question: "Chuyển sang phủ định: He is sleeping.",
+                answer: "He isn't sleeping.",
+                explanation: "Đổi cấu trúc khẳng định ngôi ba số ít thành câu phủ định hành động bằng việc áp dụng phó từ rút gọn 'isn't'."
+            },
+            {
+                id: "E4",
+                question: "Chuyển sang phủ định: I am watching TV.",
+                answer: "I'm not watching TV.",
+                explanation: "Lưu ý cấu trúc phủ định ngôi thứ nhất số ít: viết tắt đại từ thành 'I'm' rồi thêm phó từ rời tách biệt 'not'."
+            },
+            {
+                id: "E5",
+                question: "Chuyển sang phủ định: We are studying English.",
+                answer: "We aren't studying English.",
+                explanation: "Biến đổi phủ định cho câu thông báo học tập của nhóm. Chuyển đổi từ 'are' thành cấu trúc phủ định rút gọn 'aren't'."
+            },
+            {
+                id: "E6",
+                question: "Chuyển sang phủ định: It is raining.",
+                answer: "It isn't raining.",
+                explanation: "Phủ định hiện tượng thời tiết tiếp diễn hiện tại bằng phương pháp đính kèm hậu tố tạo thành từ 'isn't'."
+            },
+            {
+                id: "E7",
+                question: "Chuyển sang phủ định: The baby is crying.",
+                answer: "The baby isn't crying.",
+                explanation: "Danh từ số ít 'The baby' đi với dạng phủ định trực tiếp của hệ từ ngôi thứ ba số ít là cụm từ 'isn't'."
+            },
+            {
+                id: "E8",
+                question: "Chuyển sang phủ định: You are listening to music.",
+                answer: "You aren't listening to music.",
+                explanation: "Thực hiện thao tác phủ định hóa hành vi nghe nhạc giải trí bằng cách thay vị trí 'are' bằng từ tương thích 'aren't'."
+            },
+            {
+                id: "E9",
+                question: "Chuyển sang phủ định: Tom is doing his homework.",
+                answer: "Tom isn't doing his homework.",
+                explanation: "Chủ từ tên riêng một cá nhân 'Tom' yêu cầu cấu trúc kết hợp phủ định hành vi học tập là 'Tom isn't'."
+            },
+            {
+                id: "E10",
+                question: "Chuyển sang phủ định: The children are sleeping.",
+                answer: "The children aren't sleeping.",
+                explanation: "Chủ ngữ danh từ số nhiều đặc biệt 'The children' đòi hỏi áp dụng hình thái phủ định số nhiều tương ứng 'aren't'."
+            },
+            {
+                id: "E11",
+                question: "Chuyển sang phủ định: She is wearing a hat.",
+                answer: "She isn't wearing a hat.",
+                explanation: "Phủ định trạng thái trang phục phụ kiện trên người bằng cách đổi hệ từ khẳng định sang dạng phủ định 'isn't'."
+            },
+            {
+                id: "E12",
+                question: "Chuyển sang phủ định: They are leaving now.",
+                answer: "They aren't leaving now.",
+                explanation: "Hành động di chuyển rời đi bị phủ định tại thời điểm thực tế, áp dụng cấu trúc kết nối 'They aren't'."
+            },
+            {
+                id: "E13",
+                question: "Chuyển sang phủ định: I am reading a book.",
+                answer: "I'm not reading a book.",
+                explanation: "Phủ định hoạt động đọc sách cá nhân: giữ nguyên phân từ và đổi khối cấu trúc đầu thành cụm từ ngắn gọn 'I'm not'."
+            },
+            {
+                id: "E14",
+                question: "Chuyển sang phủ định: He is driving to work.",
+                answer: "He isn't driving to work.",
+                explanation: "Chuyển đổi câu khẳng định lộ trình di chuyển bằng xe ô tô sang phủ định bằng trợ từ ngôi thứ ba số ít 'isn't'."
+            },
+            {
+                id: "E15",
+                question: "Chuyển sang phủ định: We are having lunch.",
+                answer: "We aren't having lunch.",
+                explanation: "Phủ định hoạt động ăn trưa tập thể hiện tại bằng cách áp dụng cấu trúc ngữ pháp thông dụng 'We aren't'."
+            },
+            {
+                id: "E16",
+                question: "Chuyển sang phủ định: Lan is singing a song.",
+                answer: "Lan isn't singing a song.",
+                explanation: "Hành động ca hát của cá nhân nữ giới bị phủ định bằng trợ động từ tương ứng tên riêng số ít 'isn't'."
+            },
+            {
+                id: "E17",
+                question: "Chuyển sang phủ định: It is snowing.",
+                answer: "It isn't snowing.",
+                explanation: "Câu phủ định mô tả hiện tượng thời tiết tuyết rơi không diễn ra: kết hợp chủ từ 'It' cùng hệ từ phủ định 'isn't'."
+            },
+            {
+                id: "E18",
+                question: "Chuyển sang phủ định: My friends are waiting outside.",
+                answer: "My friends aren't waiting outside.",
+                explanation: "Chủ ngữ danh từ số nhiều chứa hậu tố chỉ số đông bạn bè ('My friends') yêu cầu đi với cụm phủ định 'aren't'."
+            },
+            {
+                id: "E19",
+                question: "Chuyển sang phủ định: She is making a cake.",
+                answer: "She isn't making a cake.",
+                explanation: "Phủ định hoạt động làm bánh thủ công trong bếp bằng cách sử dụng công thức rút gọn ngôi thứ ba 'She isn't'."
+            },
+            {
+                id: "E20",
+                question: "Chuyển sang phủ định: He is running fast.",
+                answer: "He isn't running fast.",
+                explanation: "Phủ định tốc độ chạy di chuyển của đối tượng nam giới bằng cách đưa hệ động từ khẳng định về thể 'isn't'."
+            },
+            {
+                id: "E21",
+                question: "Chuyển sang phủ định: The dog is barking.",
+                answer: "The dog isn't barking.",
+                explanation: "Phủ định tiếng động phát ra từ động vật đơn lẻ. Danh từ số ít 'The dog' đi liền cụm từ phủ định cấu trúc 'isn't'."
+            },
+            {
+                id: "E22",
+                question: "Chuyển sang phủ định: I am learning to swim.",
+                answer: "I'm not learning to swim.",
+                explanation: "Hành vi tập bơi cá nhân được chuyển đổi sang dạng thức phủ định hiện tại tiếp diễn qua cụm từ 'I'm not'."
+            },
+            {
+                id: "E23",
+                question: "Chuyển sang phủ định: You are doing it wrong.",
+                answer: "You aren't doing it wrong.",
+                explanation: "Phủ định nhận định hành vi sai trái của đối phương bằng cách chuyển đổi hệ từ 'are' sang thể phủ định 'aren't'."
+            },
+            {
+                id: "E24",
+                question: "Chuyển sang phủ định: They are building a house.",
+                answer: "They aren't building a house.",
+                explanation: "Công trình xây dựng không diễn ra tại thời điểm hiện tại: áp dụng hình thái phủ định số nhiều số đông 'They aren't'."
+            },
+            {
+                id: "E25",
+                question: "Chuyển sang phủ định: We are watching a movie.",
+                answer: "We aren't watching a movie.",
+                explanation: "Đổi trạng thái xem phim tập thể sang dạng phủ định bằng việc hoán đổi vị trí từ 'are' thành cấu trúc chuẩn 'aren't'."
+            },
+
+            // ==========================================
+            // SECTION F: TRANSFORMATION TO YES/NO QUESTIONS (VIẾT LẠI CÂU HỎI YES/NO)
+            // ==========================================
+            {
+                id: "F1",
+                question: "Chuyển thành câu hỏi Yes/No: She is cooking dinner.",
+                answer: "Is she cooking dinner?",
+                explanation: "Đảo trợ động từ 'is' lên vị trí trước chủ ngữ 'she', giữ nguyên phân từ 'cooking' và thêm dấu hỏi chấm."
+            },
+            {
+                id: "F2",
+                question: "Chuyển thành câu hỏi Yes/No: They are playing football.",
+                answer: "Are they playing football?",
+                explanation: "Đưa hệ từ số nhiều 'Are' ra đứng trước đại từ chủ ngữ 'they' để thiết lập cấu trúc câu hỏi đảo."
+            },
+            {
+                id: "F3",
+                question: "Chuyển thành câu hỏi Yes/No: He is sleeping.",
+                answer: "Is he sleeping?",
+                explanation: "Thiết lập cấu trúc kiểm tra trạng thái ngủ của đối tượng bằng cách chuyển trợ động từ 'Is' lên vị trí đầu câu."
+            },
+            {
+                id: "F4",
+                question: "Chuyển thành câu hỏi Yes/No: You are watching TV.",
+                answer: "Are you watching TV?",
+                explanation: "Chuyển đổi khẳng định sang câu hỏi đối thoại trực tiếp bằng phương pháp đưa hệ từ 'Are' lên vị trí tiên phong."
+            },
+            {
+                id: "F5",
+                question: "Chuyển thành câu hỏi Yes/No: We are studying English.",
+                answer: "Are we studying English?",
+                explanation: "Đảo hệ động từ tập thể 'Are' lên trước đại từ chủ ngữ số nhiều 'we' nhằm tạo dựng câu hỏi Yes/No tiếp diễn."
+            },
+            {
+                id: "F6",
+                question: "Chuyển thành câu hỏi Yes/No: It is raining.",
+                answer: "Is it raining?",
+                explanation: "Câu hỏi nhanh về tình hình thời tiết thực tế bằng cách đưa trợ động từ 'Is' đứng trước chủ ngữ trung tính 'it'."
+            },
+            {
+                id: "F7",
+                question: "Chuyển thành câu hỏi Yes/No: The baby is crying.",
+                answer: "Is the baby crying?",
+                explanation: "Đưa hệ động từ số ít 'Is' ra trước cụm danh từ số ít đóng vai trò chủ thể 'the baby' để lập câu hỏi dạng đảo."
+            },
+            {
+                id: "F8",
+                question: "Chuyển thành câu hỏi Yes/No: Tom is doing his homework.",
+                answer: "Is Tom doing his homework?",
+                explanation: "Chuyển từ 'Is' lên đứng trước tên riêng chủ từ 'Tom' để tạo thành câu hỏi nghi vấn kiểm tra hành động."
+            },
+            {
+                id: "F9",
+                question: "Chuyển thành câu hỏi Yes/No: The children are sleeping.",
+                answer: "Are the children sleeping?",
+                explanation: "Áp dụng cấu trúc nghi vấn số nhiều: Đảo trợ động từ 'Are' lên trước danh từ số nhiều đặc biệt 'the children'."
+            },
+            {
+                id: "F10",
+                question: "Chuyển thành câu hỏi Yes/No: She is wearing a hat.",
+                answer: "Is she wearing a hat?",
+                explanation: "Lập câu hỏi Yes/No về phụ kiện trang phục: Đưa động từ 'Is' lên đầu câu trước đại từ nhân xưng 'she'."
+            },
+            {
+                id: "F11",
+                question: "Chuyển thành câu hỏi Yes/No: They are leaving now.",
+                answer: "Are they leaving now?",
+                explanation: "Đảo hệ động từ số nhiều 'Are' ra trước chủ ngữ số đông 'they' nhằm xác minh hành động rời đi tức thời."
+            },
+            {
+                id: "F12",
+                question: "Chuyển thành câu hỏi Yes/No: He is driving to work.",
+                answer: "Is he driving to work?",
+                explanation: "Đặt câu hỏi đảo ngữ cho lộ trình di chuyển bằng xe hơi bằng cách đặt động từ 'Is' lên trước đại từ 'he'."
+            },
+            {
+                id: "F13",
+                question: "Chuyển thành câu hỏi Yes/No: We are having lunch.",
+                answer: "Are we having lunch?",
+                explanation: "Đưa trợ từ hệ thống 'Are' lên trước chủ ngữ 'we' tạo câu hỏi tập thể về việc dùng bữa trưa tại thời điểm hiện tại."
+            },
+            {
+                id: "F14",
+                question: "Chuyển thành câu hỏi Yes/No: Lan is singing a song.",
+                answer: "Is Lan singing a song?",
+                explanation: "Tạo cấu trúc câu hỏi nghi vấn bằng cách chuyển trợ động từ 'Is' lên đứng vị trí trước danh từ riêng số ít 'Lan'."
+            },
+            {
+                id: "F15",
+                question: "Chuyển thành câu hỏi Yes/No: It is snowing.",
+                answer: "Is it snowing?",
+                explanation: "Xác minh hiện tượng tuyết rơi ngoài trời qua thể nghi vấn bằng cách đảo hệ động từ 'Is' đứng trước chủ từ 'it'."
+            },
+            {
+                id: "F16",
+                question: "Chuyển thành câu hỏi Yes/No: Your friends are waiting outside.",
+                answer: "Are your friends waiting outside?",
+                explanation: "Chủ ngữ là cụm danh từ số nhiều 'your friends', vì vậy ta đảo trợ động từ tương ứng dạng số nhiều 'Are' lên đầu."
+            },
+            {
+                id: "F17",
+                question: "Chuyển thành câu hỏi Yes/No: She is making a cake.",
+                answer: "Is she making a cake?",
+                explanation: "Hỏi xem đối tượng nữ giới có đang làm bánh hay không bằng cách đảo trợ từ số ít 'Is' lên đầu câu."
+            },
+            {
+                id: "F18",
+                question: "Chuyển thành câu hỏi Yes/No: He is running fast.",
+                answer: "Is he running fast?",
+                explanation: "Chuyển hệ từ 'is' lên vị trí xuất phát đứng trước đại từ chủ từ 'he' để tạo cấu trúc nghi vấn tốc độ chạy."
+            },
+            {
+                id: "F19",
+                question: "Chuyển thành câu hỏi Yes/No: The dog is barking.",
+                answer: "Is the dog barking?",
+                explanation: "Hỏi về hành động của vật nuôi đơn lẻ. Thực hiện đảo trợ động từ ngôi ba số ít 'Is' lên trước danh từ 'the dog'."
+            },
+            {
+                id: "F20",
+                question: "Chuyển thành câu hỏi Yes/No: You are learning to swim.",
+                answer: "Are you learning to swim?",
+                explanation: "Đảo trợ từ 'Are' lên vị trí trước đại từ nhân xưng 'you' để thiết lập câu hỏi tương tác trực tiếp về việc học bơi."
+            },
+            {
+                id: "F21",
+                question: "Chuyển thành câu hỏi Yes/No: They are building a house.",
+                answer: "Are they building a house?",
+                explanation: "Chuyển đổi câu khẳng định công trình xây dựng sang dạng nghi vấn đảo bằng cách đưa từ 'Are' lên đứng đầu."
+            },
+            {
+                id: "F22",
+                question: "Chuyển thành câu hỏi Yes/No: Mai is reading a book.",
+                answer: "Is Mai reading a book?",
+                explanation: "Chủ từ là danh từ riêng số ít 'Mai', thực hiện đưa trợ động từ thích hợp ngôi số ít 'Is' ra trước tên riêng."
+            },
+            {
+                id: "F23",
+                question: "Chuyển thành câu hỏi Yes/No: The students are taking a test.",
+                answer: "Are the students taking a test?",
+                explanation: "Đảo trợ từ hệ thống dạng số nhiều 'Are' đứng trước cụm danh từ số đông học sinh 'the students' để lập câu hỏi."
+            },
+            {
+                id: "F24",
+                question: "Chuyển thành câu hỏi Yes/No: He is wearing glasses.",
+                answer: "Is he wearing glasses?",
+                explanation: "Thiết lập nghi vấn về đặc điểm nhận dạng trang phục phụ kiện mắt kính bằng phương pháp đảo trợ động từ 'Is' lên đầu."
+            },
+            {
+                id: "F25",
+                question: "Chuyển thành câu hỏi Yes/No: We are going home.",
+                answer: "Are we going home?",
+                explanation: "Câu hỏi Yes/No về lịch trình di chuyển về nhà của tập thể. Thực hiện đưa trợ động từ số nhiều 'Are' ra đầu câu."
+            },
+
+            // ==========================================
+            // SECTION G: ERROR IDENTIFICATION & CORRECTION (TÌM VÀ SỬA LỖI SAI)
+            // ==========================================
+            {
+                id: "G1",
+                question: "Sửa lỗi: She reading a book now. -> ___",
+                answer: "She is reading a book now.",
+                explanation: "Lỗi thiếu cấu trúc: Thì Hiện tại tiếp diễn bắt buộc phải có cấu trúc cấu thành [To be] + V-ing. Thiếu 'is' sau ngôi ba số ít."
+            },
+            {
+                id: "G2",
+                question: "Sửa lỗi: They are play football. -> ___",
+                answer: "They are playing football.",
+                explanation: "Lỗi dạng động từ: Sau trợ động từ 'are' trong cấu trúc tiếp diễn, động từ chính phải đổi thành đuôi V-ing ('playing')."
+            },
+            {
+                id: "G3",
+                question: "Sửa lỗi: He is runing fast. -> ___",
+                answer: "He is running fast.",
+                explanation: "Lỗi chính tả cấu trúc từ: Động từ gốc 'run' có cấu tạo một âm tiết CVC, khi chuyển sang dạng V-ing bắt buộc viết gấp đôi chữ 'n'."
+            },
+            {
+                id: "G4",
+                question: "Sửa lỗi: I am wanting a coffee. -> ___",
+                answer: "I want a coffee.",
+                explanation: "Lỗi bản chất từ vựng: Động từ chỉ mong muốn 'want' là một stative verb (động từ trạng thái), không được dùng ở dạng tiếp diễn."
+            },
+            {
+                id: "G5",
+                question: "Sửa lỗi: Is she write a letter? -> ___",
+                answer: "Is she writing a letter?",
+                explanation: "Lỗi hình thái động từ chính trong câu nghi vấn tiếp diễn: Động từ gốc 'write' phải được chuyển đổi thành đuôi V-ing 'writing'."
+            },
+            {
+                id: "G6",
+                question: "Sửa lỗi: We is watching TV. -> ___",
+                answer: "We are watching TV.",
+                explanation: "Lỗi hòa hợp chủ vị: Chủ ngữ đại từ ngôi thứ nhất số nhiều 'We' bắt buộc đi kèm hệ từ số nhiều 'are', không dùng từ số ít 'is'."
+            },
+            {
+                id: "G7",
+                question: "Sửa lỗi: The baby are crying. -> ___",
+                answer: "The baby is crying.",
+                explanation: "Lỗi phối hợp số lượng danh từ và hệ từ: 'The baby' là danh từ đếm được số ít, phải chuyển đổi hệ từ 'are' thành dạng 'is'."
+            },
+            {
+                id: "G8",
+                question: "Sửa lỗi: He is makeing a cake. -> ___",
+                answer: "He is making a cake.",
+                explanation: "Lỗi chính tả: Động từ kết thúc bằng ký tự nguyên âm câm chữ 'e' ('make') bắt buộc phải bỏ 'e' rồi mới thêm hậu tố '-ing'."
+            },
+            {
+                id: "G9",
+                question: "Sửa lỗi: You are do it wrong. -> ___",
+                answer: "You are doing it wrong.",
+                explanation: "Lỗi kết cấu tiếp diễn: Động từ hành động 'do' đứng sau hệ từ liên kết 'are' phải được thêm hậu tố chuyển hóa thành V-ing 'doing'."
+            },
+            {
+                id: "G10",
+                question: "Sửa lỗi: I am study now. -> ___",
+                answer: "I am studying now.",
+                explanation: "Ngữ cảnh chứa trạng từ thời gian thực 'now' yêu cầu hoàn chỉnh công thức tiếp diễn bằng cách chuyển động từ 'study' thành 'studying'."
+            },
+            {
+                id: "G11",
+                question: "Sửa lỗi: She don't watching TV. -> ___",
+                answer: "She isn't watching TV.",
+                explanation: "Lỗi kết hợp trợ từ phủ định: Để phủ định động từ đuôi V-ing ('watching'), ta phải dùng cấu trúc hệ từ 'isn't' chứ không dùng trợ từ 'don't'."
+            },
+            {
+                id: "G12",
+                question: "Sửa lỗi: They is playing games. -> ___",
+                answer: "They are playing games.",
+                explanation: "Lỗi hòa hợp ngữ pháp: Đại từ nhân xưng số nhiều chỉ nhóm đối tượng 'They' bắt buộc đồng hành cùng trợ động từ 'are'."
+            },
+            {
+                id: "G13",
+                question: "Sửa lỗi: It is rain now. -> ___",
+                answer: "It is raining now.",
+                explanation: "Trạng từ chỉ khoảnh khắc hiện tại 'now' kết hợp hệ từ 'is' yêu cầu động từ chính thời tiết chuyển sang phân từ 'raining'."
+            },
+            {
+                id: "G14",
+                question: "Sửa lỗi: Are he sleeping? -> ___",
+                answer: "Is he sleeping?",
+                explanation: "Lỗi đảo trợ từ câu hỏi: Chủ từ ngôi thứ ba số ít diện nam giới 'he' yêu cầu trợ động từ nghi vấn tương ứng đứng đầu là 'Is'."
+            },
+            {
+                id: "G15",
+                question: "Sửa lỗi: He is siting on the chair. -> ___",
+                answer: "He is sitting on the chair.",
+                explanation: "Lỗi chính tả phân từ: Động từ gốc một âm tiết ngắn kết thúc bằng cấu tạo phụ-nguyên-phụ 'sit' yêu cầu viết gấp đôi âm 't' thành 'tt'."
+            },
+            {
+                id: "G16",
+                question: "Sửa lỗi: I am knowing the answer. -> ___",
+                answer: "I know the answer.",
+                explanation: "Lỗi bản chất động từ trạng thái: Động từ nhận thức tư duy 'know' (biết) không chia ở dạng tiếp diễn, chuyển hẳn về hiện tại đơn."
+            },
+            {
+                id: "G17",
+                question: "Sửa lỗi: She is ling on the bed. -> ___",
+                answer: "She is lying on the bed.",
+                explanation: "Lỗi chính tả đặc biệt của động từ nằm phẳng 'lie': Khi chuyển sang dạng đuôi V-ing, gốc '-ie' biến đổi thành chữ cái 'y' tạo nên từ 'lying'."
+            },
+            {
+                id: "G18",
+                question: "Sửa lỗi: We are have dinner. -> ___",
+                answer: "We are having dinner.",
+                explanation: "Cấu trúc hành động ăn uống đang diễn ra yêu cầu động từ 'have' chuyển sang phân từ V-ing, bỏ chữ 'e' câm tạo nên từ 'having'."
+            },
+            {
+                id: "G19",
+                question: "Sửa lỗi: The dogs is barking. -> ___",
+                answer: "The dogs are barking.",
+                explanation: "Lỗi sự hòa hợp giữa số lượng danh từ chủ ngữ và hệ từ: Danh từ số nhiều 'The dogs' yêu cầu đổi hệ từ 'is' thành dạng 'are'."
+            },
+            {
+                id: "G20",
+                question: "Sửa lỗi: Why you are crying? -> ___",
+                answer: "Why are you crying?",
+                explanation: "Lỗi cấu trúc trật tự câu hỏi: Trong câu hỏi có từ để hỏi Wh-word, trợ động từ 'are' bắt buộc phải đảo lên trước đại từ chủ ngữ 'you'."
+            },
+            {
+                id: "G21",
+                question: "Sửa lỗi: He is swiming in the pool. -> ___",
+                answer: "He is swimming in the pool.",
+                explanation: "Lỗi quy tắc viết chính tả: Động từ ngắn đơn âm tiết 'swim' có cấu trúc kết thúc CVC, khi thêm đuôi phải nhân đôi chữ cái 'm' thành 'mm'."
+            },
+            {
+                id: "G22",
+                question: "Sửa lỗi: I not am working today. -> ___",
+                answer: "I am not working today.",
+                explanation: "Lỗi sai vị trí phó từ phủ định: Trong câu tiếp diễn phủ định, vị trí của từ 'not' bắt buộc đứng sau hệ từ 'am' và đứng trước V-ing."
+            },
+            {
+                id: "G23",
+                question: "Sửa lỗi: She is wear a red dress. -> ___",
+                answer: "She is wearing a red dress.",
+                explanation: "Mô tả trạng thái trang phục đang mặc trên người yêu cầu hoàn thiện công thức tiếp diễn bằng hình thái V-ing của động từ là 'wearing'."
+            },
+            {
+                id: "G24",
+                question: "Sửa lỗi: Listen! The birds is singing. -> ___",
+                answer: "Listen! The birds are singing.",
+                explanation: "Lỗi hòa hợp số nhiều: Danh từ chủ thể phát ra âm thanh có đuôi số nhiều '-s' ('The birds') yêu cầu đi kèm trợ động từ số nhiều 'are'."
+            },
+            {
+                id: "G25",
+                question: "Sửa lỗi: Are you understand this? -> ___",
+                answer: "Do you understand this?",
+                explanation: "Động từ trạng thái nhận thức trí tuệ 'understand' không được dùng tiếp diễn. Câu hỏi hiện tại đơn sử dụng trợ động từ 'Do'."
+            },
+
+            // ==========================================
+            // SECTION H: SENTENCE UNSCRAMBLING & CONJUGATION (SẮP XẾP VÀ CHIA ĐỘNG TỪ)
+            // ==========================================
+            {
+                id: "H1",
+                question: "Sắp xếp & Chia: now / she / (cook)",
+                answer: "She is cooking now.",
+                explanation: "Xây dựng câu khẳng định tiếp diễn dựa trên từ chỉ thời gian 'now': Đưa chủ từ ngôi thứ ba số ít lên đầu kết hợp cụm 'is cooking'."
+            },
+            {
+                id: "H2",
+                question: "Sắp xếp & Chia: now / they / (play) / football",
+                answer: "They are playing football now.",
+                explanation: "Sắp đặt trật tự chuẩn tiếng Anh: Chủ ngữ 'They' + hệ từ số nhiều 'are' + phân từ hành động 'playing' + tân ngữ + trạng từ thời gian cuối câu."
+            },
+            {
+                id: "H3",
+                question: "Sắp xếp & Chia: right now / I / (read) / a / book",
+                answer: "I am reading a book right now.",
+                explanation: "Cấu trúc câu khẳng định với chủ ngữ cá nhân 'I' đi liền cụm 'am reading', tân ngữ 'a book' và đặt cụm thời gian 'right now' ở cuối câu."
+            },
+            {
+                id: "H4",
+                question: "Sắp xếp & Chia: Look! / it / (rain)",
+                answer: "Look! It is raining.",
+                explanation: "Từ mệnh lệnh gây chú ý đứng đầu câu ngăn cách bằng dấu phẩy hoặc chấm than. Mệnh đề thời tiết tiếp diễn phía sau chia cấu trúc 'It is raining'."
+            },
+            {
+                id: "H5",
+                question: "Sắp xếp & Chia: you / (watch) / TV / right now / ?",
+                answer: "Are you watching TV right now?",
+                explanation: "Cấu trúc nghi vấn dạng tiếp diễn có dấu hỏi cuối câu: Đưa trợ từ 'Are' lên đầu, tiếp đến chủ từ 'you', động từ dạng V-ing và trạng từ."
+            },
+            {
+                id: "H6",
+                question: "Sắp xếp & Chia: he / not / (sleep) / at the moment",
+                answer: "He is not sleeping at the moment.",
+                explanation: "Cú pháp câu phủ định hành động dựa trên dấu hiệu 'at the moment': Chủ từ 'He' kết hợp thành tố phủ định và động từ chia dạng 'is not sleeping'."
+            },
+            {
+                id: "H7",
+                question: "Sắp xếp & Chia: the / baby / (sleep) / now",
+                answer: "The baby is sleeping now.",
+                explanation: "Sắp xếp danh từ làm chủ từ xác định đơn lẻ 'The baby', kết hợp cấu trúc động từ ngôi số ít dạng tiếp diễn 'is sleeping' cùng trạng từ 'now'."
+            },
+            {
+                id: "H8",
+                question: "Sắp xếp & Chia: now / we / (study) / English",
+                answer: "We are studying English now.",
+                explanation: "Sắp đặt đại từ ngôi thứ nhất số nhiều 'We' làm chủ ngữ chính, kết hợp hình thái số nhiều 'are studying' và tân ngữ môn học 'English'."
+            },
+            {
+                id: "H9",
+                question: "Sắp xếp & Chia: she / (wear) / a / hat / today / ?",
+                answer: "Is she wearing a hat today?",
+                explanation: "Câu hỏi đảo ngữ Yes/No xác định trạng thái trang phục trong ngày 'today'. Đảo hệ từ số ít 'Is' lên trước đại từ nhân xưng 'she'."
+            },
+            {
+                id: "H10",
+                question: "Sắp xếp & Chia: right now / I / (listen) / to / music",
+                answer: "I am listening to music right now.",
+                explanation: "Kết hợp động từ có giới từ đi kèm 'listen to'. Chia tiếp diễn với chủ từ ngôi thứ nhất tạo thành tổ hợp hoàn chỉnh 'I am listening to music'."
+            },
+            {
+                id: "H11",
+                question: "Sắp xếp & Chia: the / children / (play) / outside / now",
+                answer: "The children are playing outside now.",
+                explanation: "Danh từ số nhiều 'The children' đòi hỏi đi kèm động từ chia dạng tiếp diễn số nhiều 'are playing', theo sau là trạng từ nơi chốn và thời gian."
+            },
+            {
+                id: "H12",
+                question: "Sắp xếp & Chia: what / he / (do) / right now / ?",
+                answer: "What is he doing right now?",
+                explanation: "Cấu trúc câu hỏi lấy thông tin hành động (Wh-question): Từ để hỏi 'What' + trợ động từ số ít 'is' + chủ ngữ 'he' + phân từ hiện tại 'doing'."
+            },
+            {
+                id: "H13",
+                question: "Sắp xếp & Chia: why / you / (cry) / now / ?",
+                answer: "Why are you crying now?",
+                explanation: "Cấu trúc câu hỏi lý do diễn tiến tại chỗ: Từ hỏi 'Why' liên kết trợ từ tương thích 'are' đứng trước chủ từ 'you' và dạng phân từ 'crying'."
+            },
+            {
+                id: "H14",
+                question: "Sắp xếp & Chia: Look! / the / dog / (run) / fast",
+                answer: "Look! The dog is running fast.",
+                explanation: "Cảnh báo trực quan 'Look!'. Thành phần mệnh đề hành động phía sau chia tiếp diễn với danh từ số ít, lưu ý gấp đôi chữ 'n': 'is running'."
+            },
+            {
+                id: "H15",
+                question: "Sắp xếp & Chia: we / not / (leave) / yet",
+                answer: "We are not leaving yet.",
+                explanation: "Cấu trúc câu phủ định diễn tả kế hoạch hành động chưa diễn ra với trạng từ kết thúc 'yet': Chủ ngữ 'We' đi kèm hình thái 'are not leaving'."
+            },
+            {
+                id: "H16",
+                question: "Sắp xếp & Chia: now / she / (make) / a / cake",
+                answer: "She is making a cake now.",
+                explanation: "Sắp đặt đại từ ngôi thứ ba số ít 'She' kết hợp cấu trúc tiếp diễn 'is making' (bỏ chữ cái 'e' câm của từ gốc) kết hợp với tân ngữ cái bánh."
+            },
+            {
+                id: "H17",
+                question: "Sắp xếp & Chia: where / you / (go) / right now / ?",
+                answer: "Where are you going right now?",
+                explanation: "Câu hỏi không gian di chuyển tức thời: Từ hỏi vị trí 'Where' + hệ từ đối thoại 'are' + chủ ngữ tương tác 'you' + phân từ hướng tiến 'going'."
+            },
+            {
+                id: "H18",
+                question: "Sắp xếp & Chia: these days / they / (build) / a / house",
+                answer: "They are building a house these days.",
+                explanation: "Diễn tả dự án công việc mang tính tạm thời trong giai đoạn hiện tại với dấu hiệu cụm từ 'these days': Sử dụng cấu trúc 'They are building'."
+            },
+            {
+                id: "H19",
+                question: "Sắp xếp & Chia: right now / he / (swim) / in / the / pool",
+                answer: "He is swimming in the pool right now.",
+                explanation: "Cấu trúc câu mô tả hành động thể thao trong môi trường không gian. Chia tiếp diễn số ít 'is swimming' (viết nhân đôi phụ âm kết thúc 'm')."
+            },
+            {
+                id: "H20",
+                question: "Sắp xếp & Chia: these days / I / (prepare) / for / this / exam",
+                answer: "I am preparing for this exam these days.",
+                explanation: "Diễn tả hành động chuẩn bị mang tính thời kỳ kéo dài tạm thời quanh hiện tại: Chủ từ 'I' đi liền 'am preparing' (lược bỏ chữ cái 'e' câm)."
+            },
+
+            // ==========================================
+            // SECTION I: PRESENT SIMPLE VS. PRESENT CONTINUOUS (HIỆN TẠI ĐƠN HAY HIỆN TẠI TIẾP DIỄN)
+            // ==========================================
+            {
+                id: "I1",
+                question: "Chọn dạng đúng: I ___ to school every day.",
+                options: ["go", "am going"],
+                answer: "go",
+                explanation: "Dấu hiệu trạng từ tần suất chỉ chu kỳ lặp lại 'every day' (mỗi ngày). Bản chất diễn tả thói quen thường nhật, chia thì Hiện tại đơn."
+            },
+            {
+                id: "I2",
+                question: "Chọn dạng đúng: Look! She ___ now.",
+                options: ["dances", "is dancing"],
+                answer: "is dancing",
+                explanation: "Sự kết hợp giữa từ cảm thán 'Look!' và trạng từ thời gian thực tế 'now' bắt buộc chia hành động ở thì Hiện tại tiếp diễn."
+            },
+            {
+                id: "I3",
+                question: "Chọn dạng đúng: Water ___ at 100°C.",
+                options: ["boils", "is boiling"],
+                answer: "boils",
+                explanation: "Diễn tả một sự thật hiển nhiên, một chân lý khoa học vật lý cố định khách quan nên bắt buộc áp dụng thì Hiện tại đơn."
+            },
+            {
+                id: "I4",
+                question: "Chọn dạng đúng: Be quiet! The baby ___.",
+                options: ["sleeps", "is sleeping"],
+                answer: "is sleeping",
+                explanation: "Câu mệnh lệnh yêu cầu giữ trật tự 'Be quiet!' chứng minh hành động ngủ của đứa trẻ đang diễn ra trực tiếp cần được bảo vệ."
+            },
+            {
+                id: "I5",
+                question: "Chọn dạng đúng: He usually ___ coffee in the morning.",
+                options: ["drinks", "is drinking"],
+                answer: "drinks",
+                explanation: "Sự xuất hiện của trạng từ tần suất chỉ thói quen cố định 'usually' (thường xuyên) yêu cầu động từ chia ở thì Hiện tại đơn."
+            },
+            {
+                id: "I6",
+                question: "Chọn dạng đúng: We ___ a film at the moment.",
+                options: ["watch", "are watching"],
+                answer: "are watching",
+                explanation: "Cụm trạng từ xác định mốc thời gian diễn tiến cụ thể 'at the moment' yêu cầu chia cấu trúc động từ thì Hiện tại tiếp diễn."
+            },
+            {
+                id: "I7",
+                question: "Chọn dạng đúng: She ___ English every evening.",
+                options: ["studies", "is studying"],
+                answer: "studies",
+                explanation: "Trạng từ chỉ tần suất chu kỳ thời gian lặp đi lặp lại 'every evening' (mỗi tối) yêu cầu chia động từ ở dạng Hiện tại đơn số ít."
+            },
+            {
+                id: "I8",
+                question: "Chọn dạng đúng: Listen! Someone ___ the piano.",
+                options: ["plays", "is playing"],
+                answer: "is playing",
+                explanation: "Tín hiệu âm thanh gây chú ý ngay tức thì 'Listen!' xác nhận hành động chơi nhạc cụ đang diễn ra thực tế."
+            },
+            {
+                id: "I9",
+                question: "Chọn dạng đúng: The sun ___ in the east.",
+                options: ["rises", "is rising"],
+                answer: "rises",
+                explanation: "Diễn tả quy luật tự nhiên của vũ trụ, chân lý bất biến trái đất (mặt trời mọc hướng Đông), sử dụng thì Hiện tại đơn."
+            },
+            {
+                id: "I10",
+                question: "Chọn dạng đúng: I ___ for my exams these days.",
+                options: ["prepare", "am preparing"],
+                answer: "am preparing",
+                explanation: "Dấu hiệu thời gian mang tính tạm thời 'these days' (dạo này) thể hiện một tiến trình công việc đang chiếm thời gian, chia tiếp diễn."
+            },
+            {
+                id: "I11",
+                question: "Chọn dạng đúng: My father ___ to work by car.",
+                options: ["goes", "is going"],
+                answer: "goes",
+                explanation: "Diễn tả phương thức di chuyển đi làm mang tính ổn định, thói quen lâu dài của một cá nhân, áp dụng thì Hiện tại đơn."
+            },
+            {
+                id: "I12",
+                question: "Chọn dạng đúng: Why ___ you ___? Are you sad?",
+                options: ["do / cry", "are / crying"],
+                answer: "are / crying",
+                explanation: "Câu hỏi dựa trên trạng thái cảm xúc trực quan nhìn thấy ngay lúc đối thoại ('Are you sad?'), chia thì Hiện tại tiếp diễn."
+            },
+            {
+                id: "I13",
+                question: "Chọn dạng đúng: Cats ___ milk.",
+                options: ["like", "are liking"],
+                answer: "like",
+                explanation: "Bản chất động từ chỉ sở thích cảm xúc 'like' là một động từ trạng thái (stative verb), đồng thời diễn tả đặc tính loài vật -> Hiện tại đơn."
+            },
+            {
+                id: "I14",
+                question: "Chọn dạng đúng: It often ___ in summer.",
+                options: ["rains", "is raining"],
+                answer: "rains",
+                explanation: "Chứa trạng từ tần suất chỉ đặc điểm khí hậu quy luật tự nhiên 'often' (thường xuyên), chia động từ ở thì Hiện tại đơn."
+            },
+            {
+                id: "I15",
+                question: "Chọn dạng đúng: I can't talk now, I ___ dinner.",
+                options: ["cook", "am cooking"],
+                answer: "am cooking",
+                explanation: "Mệnh đề đưa ra lý do không thể đàm thoại 'I can't talk now' chứng tỏ chủ thể đang bận tay nấu nướng ngay lúc nói."
+            },
+
+            // ==========================================
+            // SECTION J: TRANSLATION INTO ENGLISH (DỊCH SANG TIẾNG ANH)
+            // ==========================================
+            {
+                id: "J1",
+                question: "Dịch: Tôi đang đọc một quyển sách.",
+                answer: "I am reading a book.",
+                explanation: "Chủ ngữ 'Tôi' (I) + cấu trúc tiếp diễn 'am reading' + tân ngữ cụm danh từ 'a book'."
+            },
+            {
+                id: "J2",
+                question: "Dịch: Cô ấy đang nấu ăn.",
+                answer: "She is cooking.",
+                explanation: "Chủ ngữ ngôi ba nữ số ít 'Cô ấy' (She) + dạng thức tiếp diễn hành vi nội động từ nhà bếp 'is cooking'."
+            },
+            {
+                id: "J3",
+                question: "Dịch: Họ đang chơi bóng đá.",
+                answer: "They are playing football.",
+                explanation: "Chủ từ số nhiều 'Họ' (They) + hệ từ số đông kết hợp phân từ môn thể thao 'are playing football'."
+            },
+            {
+                id: "J4",
+                question: "Dịch: Trời đang mưa.",
+                answer: "It is raining.",
+                explanation: "Sử dụng cấu trúc chủ ngữ giả thời tiết mang tính tự nhiên 'It' kết hợp cụm từ tiếp diễn 'is raining'."
+            },
+            {
+                id: "J5",
+                question: "Dịch: Bạn đang làm gì?",
+                answer: "What are you doing?",
+                explanation: "Câu hỏi lấy thông tin hành vi hiện tại: Từ để hỏi 'What' đứng đầu + trợ từ 'are' + chủ ngữ tương tác 'you' + động từ 'doing'."
+            },
+            {
+                id: "J6",
+                question: "Dịch: Em bé đang ngủ.",
+                answer: "The baby is sleeping.",
+                explanation: "Xác định chủ thể danh từ cụ thể 'Em bé' (The baby) + trợ từ số ít kết hợp phân từ hành động 'is sleeping'."
+            },
+            {
+                id: "J7",
+                question: "Dịch: Chúng tôi đang xem một bộ phim.",
+                answer: "We are watching a movie.",
+                explanation: "Chủ từ nhóm số nhiều 'Chúng tôi' (We) + cụm động từ tiếp diễn nghe nhìn 'are watching' + tân ngữ tác phẩm giải trí 'a movie'."
+            },
+            {
+                id: "J8",
+                question: "Dịch: Anh ấy không làm việc hôm nay.",
+                answer: "He isn't working today.",
+                explanation: "Cấu trúc phủ định tiếp diễn cho mốc thời gian trong ngày 'today': Chủ ngữ 'He' kết hợp cụm từ phủ định 'isn't working'."
+            },
+            {
+                id: "J9",
+                question: "Dịch: Cô ấy đang mặc một chiếc váy đẹp.",
+                answer: "She is wearing a beautiful dress.",
+                explanation: "Dịch từ ngữ tính trạng phục: 'She is wearing' kết hợp với cụm danh từ có tính từ đứng trước bổ nghĩa 'a beautiful dress'."
+            },
+            {
+                id: "J10",
+                question: "Dịch: Bạn có đang nghe tôi không?",
+                answer: "Are you listening to me?",
+                explanation: "Câu hỏi cấu trúc đảo Yes/No tương tác trực tiếp: Đưa hệ từ 'Are' lên đầu, kết hợp động từ có giới từ bắt buộc 'listening to me'."
+            },
+            {
+                id: "J11",
+                question: "Dịch: Nhìn kìa! Xe buýt đang đến.",
+                answer: "Look! The bus is coming.",
+                explanation: "Từ cảm thán gây chú ý hành động trực quan 'Look!'. Thành phần chủ thể giao thông số ít đi với cụm từ tịnh tiến 'the bus is coming'."
+            },
+            {
+                id: "J12",
+                question: "Dịch: Tôi đang học lái xe những ngày này.",
+                answer: "I am learning to drive these days.",
+                explanation: "Cấu trúc hành động mang tính giai đoạn 'these days': Sử dụng cấu trúc 'I am learning' kết hợp động từ nguyên mẫu có 'to drive'."
+            },
+            {
+                id: "J13",
+                question: "Dịch: Các em nhỏ đang vẽ tranh.",
+                answer: "The children are drawing pictures.",
+                explanation: "Chuyển ngữ danh từ số nhiều đặc biệt chỉ trẻ em 'The children' + cấu trúc hành động nghệ thuật số nhiều 'are drawing pictures'."
+            },
+            {
+                id: "J14",
+                question: "Dịch: Con chó đang chạy nhanh.",
+                answer: "The dog is running fast.",
+                explanation: "Chủ ngữ động vật đơn lẻ 'The dog' + cụm động từ tiếp diễn tốc độ cao 'is running fast' (lưu ý viết đúng chính tả từ 'running')."
+            },
+            {
+                id: "J15",
+                question: "Dịch: Giá cả đang tăng.",
+                answer: "Prices are rising.",
+                explanation: "Chủ từ danh từ số nhiều kinh tế tài chính 'Prices' kết hợp hình thái trợ động từ số nhiều và phân từ biến động tăng 'are rising'."
+            },
+            {
+                id: "J16",
+                question: "Dịch: Mẹ tôi đang làm bánh.",
+                answer: "My mother is making a cake.",
+                explanation: "Chủ ngữ mối quan hệ gia đình số ít 'My mother' + cụm từ tiếp diễn sản xuất chế biến thực phẩm trong bếp 'is making a cake'."
+            },
+            {
+                id: "J17",
+                question: "Dịch: Tôi đang chuẩn bị cho kỳ thi.",
+                answer: "I am preparing for the exam.",
+                explanation: "Kết hợp cấu trúc động từ đi kèm giới từ mục tiêu 'prepare for'. Chia ở ngôi thứ nhất số ít tiếp diễn tạo thành cụm 'I am preparing for'."
+            },
+            {
+                id: "J18",
+                question: "Dịch: Họ đang xây một ngôi nhà.",
+                answer: "They are building a house.",
+                explanation: "Chủ ngữ tập thể 'Họ' (They) + cấu trúc xây dựng công trình số nhiều 'are building' + danh từ tân ngữ mục tiêu 'a house'."
+            },
+            {
+                id: "J19",
+                question: "Dịch: Cô ấy đang hát một bài hát.",
+                answer: "She is singing a song.",
+                explanation: "Chủ từ ngôi ba số ít nữ 'She' + cụm từ tiếp diễn hoạt động nghệ thuật phát âm thanh 'is singing' + tân ngữ bài hát 'a song'."
+            },
+            {
+                id: "J20",
+                question: "Dịch: Chúng tôi đang đi về nhà.",
+                answer: "We are going home.",
+                explanation: "Chủ ngữ ngôi thứ nhất số nhiều 'We' + cụm từ tiếp diễn di chuyển hướng nội 'are going home' (lưu ý từ 'home' không cần giới từ 'to')."
+            },
+
+            // ==========================================
+            // SECTION K: CLOZE TEXT PARAGRAPH FILL-INS (ĐIỀN VÀO ĐOẠN VĂN KHÔNG GIAN CÔNG VIÊN)
+            // ==========================================
+            {
+                id: "K1",
+                question: "Đoạn văn (1): It is Sunday afternoon and the park is busy. The sun ___ brightly. (shine)",
+                answer: "is shining",
+                explanation: "Mô tả bối cảnh không gian thời tiết đang diễn ra trực quan trong buổi chiều Chủ nhật: Danh từ số ít 'The sun' đi kèm cụm từ 'is shining'."
+            },
+            {
+                id: "K2",
+                question: "Đoạn văn (2): A group of children ___ football near the lake. (play)",
+                answer: "are playing",
+                explanation: "Mặc dù danh từ trung tâm là cấu trúc tập hợp 'A group', ngữ cảnh nhấn mạnh các cá thể trẻ em đang cùng thực hiện hành động chơi bóng."
+            },
+            {
+                id: "K3",
+                question: "Đoạn văn (3): An old man ___ on a bench. (sit)",
+                answer: "is sitting",
+                explanation: "Mô tả trạng thái vị trí của một cá nhân cụ thể tại hiện trường công viên: Danh từ số ít 'An old man' đi với cụm từ 'is sitting' (gấp đôi chữ 't')."
+            },
+            {
+                id: "K4",
+                question: "Đoạn văn (4): He ___ a newspaper. (read)",
+                answer: "is reading",
+                explanation: "Hành động đọc báo diễn tiến song song của cụ già ở câu trước, tiếp tục duy trì chủ ngữ ngôi ba số ít 'He' đi kèm cấu trúc 'is reading'."
+            },
+            {
+                id: "K5",
+                question: "Đoạn văn (5): Two women ___ along the path. (jog)",
+                answer: "are jogging",
+                explanation: "Mô tả hành động thể thao của hai cá nhân: Danh từ số nhiều xác định số lượng 'Two women' đi với cấu trúc 'are jogging' (gấp đôi chữ 'g')."
+            },
+            {
+                id: "K6",
+                question: "Đoạn văn (6): A little girl ___ an ice cream. (eat)",
+                answer: "is eating",
+                explanation: "Mô tả hành động thưởng thức đồ ăn của một đứa trẻ tại hiện trường: Danh từ số ít 'A little girl' đi liền cấu trúc 'is eating'."
+            },
+            {
+                id: "K7",
+                question: "Đoạn văn (7): Her mother ___ photos of her. (take)",
+                answer: "is taking",
+                explanation: "Hành động chụp ảnh diễn ra tức thời của người mẹ đứng cạnh: Danh từ số ít đóng vai trò chủ thể 'Her mother' đi với cụm từ 'is taking'."
+            },
+            {
+                id: "K8",
+                question: "Đoạn văn (8): Some teenagers ___ music on their phones. (listen)",
+                answer: "are listening",
+                explanation: "Chủ ngữ chứa định từ số nhiều bất định 'Some teenagers' biểu đạt một nhóm thanh thiếu niên, yêu cầu chia hình thái số nhiều 'are listening'."
+            },
+            {
+                id: "K9",
+                question: "Đoạn văn (9): A dog ___ after a ball. (run)",
+                answer: "is running",
+                explanation: "Mô tả hành động đuổi bắt vui nhộn của vật nuôi: Danh từ số ít 'A dog' yêu cầu cấu trúc tiếp diễn 'is running' (nhân đôi phụ âm 'n')."
+            },
+            {
+                id: "K10",
+                question: "Đoạn văn (10): Near the gate, a man ___ balloons. (sell)",
+                answer: "is selling",
+                explanation: "Mô tả hoạt động thương mại của một tiểu thương tại một vị trí trong công viên: Danh từ số ít 'a man' đi liền cụm cấu trúc 'is selling'."
+            },
+            {
+                id: "K11",
+                question: "Đoạn văn (11): Two friends ___ and laughing together. (talk)",
+                answer: "are talking",
+                explanation: "Diễn tả hành động tương tác trò chuyện của hai người bạn liên kết bằng liên từ phối hợp: Danh từ số nhiều 'Two friends' đi với 'are talking'."
+            },
+            {
+                id: "K12",
+                question: "Đoạn văn (12): A young couple ___ a picnic on the grass. (have)",
+                answer: "are having",
+                explanation: "Cụm danh từ tập hợp chỉ một cặp đôi 'A young couple' thực hiện hành động sinh hoạt dã ngoại, chia hình thái động từ số nhiều 'are having'."
+            },
+            {
+                id: "K13",
+                question: "Đoạn văn (13): The birds ___ in the tall trees. (sing)",
+                answer: "are singing",
+                explanation: "Mô tả âm thanh tự nhiên tại hiện trường lúc bấy giờ: Danh từ số nhiều xác định có đuôi '-s' ('The birds') yêu cầu chia cấu trúc 'are singing'."
+            },
+            {
+                id: "K14",
+                question: "Đoạn văn (14): I ___ all of this from my window. (watch)",
+                answer: "am watching",
+                explanation: "Góc nhìn chứng kiến của người kể chuyện từ ô cửa sổ nhà ngay thời điểm thực tế: Chủ ngữ 'I' đòi hỏi đi liền với cụm cấu trúc 'am watching'."
+            },
+            {
+                id: "K15",
+                question: "Đoạn văn (15): Everyone ___ the beautiful weather. (enjoy)",
+                answer: "is enjoying",
+                explanation: "Đại từ bất định chỉ tập thể nhưng luôn mang đặc tính ngữ pháp tính là ngôi thứ ba số ít 'Everyone', bắt buộc đi kèm cụm từ 'is enjoying'."
+            }
+        ];
+
+        // Khởi tạo và hiển thị câu hỏi lên giao diện HTML
+        function initQuiz() {
+            presentContinuousExercises.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'quiz-card';
+
+                const qid = item.id || `q${index + 1}`;
+                item.id = qid;
+                card.setAttribute('data-id', qid);
+
+                const questionContent = `<div class="question-text"><span class="question-num">Q${index + 1}.</span>${item.question}</div>`;
+
+                let inputHtml;
+                if (Array.isArray(item.options) && item.options.length) {
+                    const optionName = `q_${qid}`;
+                    const optionsHtml = item.options.map((option, optIndex) => {
+                        const optionId = `${qid}_opt_${optIndex}`;
+                        return `
+                            <label class="option-label" for="${optionId}">
+                                <input type="radio" id="${optionId}" name="${optionName}" value="${option}">
+                                ${option}
+                            </label>
+                        `;
+                    }).join('');
+
+                    inputHtml = `
+                        <div class="options-group">
+                            ${optionsHtml}
+                        </div>
+                    `;
+                } else {
+                    inputHtml = `
+                        <input type="text" class="text-input" name="q_${qid}" placeholder="Nhập đáp án của bạn tại đây...">
+                    `;
+                }
+
+                card.innerHTML = questionContent + inputHtml;
+                fitbContainer.appendChild(card);
+
+                const fbDiv = document.createElement('div');
+                fbDiv.className = 'feedback';
+                fbDiv.id = `fb_${qid}`;
+                fbDiv.style.display = 'none';
+                card.appendChild(fbDiv);
+            });
+        }
+
+        // Hàm chấm điểm toàn diện hệ thống
+        function gradeQuiz() {
+            let total = presentContinuousExercises.length;
+            let correctCount = 0;
+
+            presentContinuousExercises.forEach(item => {
+                const feedbackDiv = document.getElementById(`fb_${item.id}`);
+                const selectedOption = document.querySelector(`input[name="q_${item.id}"]:checked`);
+                const textInput = document.querySelector(`input[type="text"][name="q_${item.id}"]`);
+                const userAnswer = selectedOption
+                    ? String(selectedOption.value).trim().toLowerCase()
+                    : textInput
+                        ? String(textInput.value).trim().toLowerCase()
+                        : '';
+                const standardCorrectAnswer = String(item.answer || '').trim().toLowerCase();
+                const alternatives = standardCorrectAnswer.split('|').map(s => s.trim());
+                const matched = alternatives.some(a => a === userAnswer);
+
+                if (matched) {
+                    correctCount++;
+                    feedbackDiv.className = 'feedback correct';
+                    feedbackDiv.innerHTML = `✓ Chính xác!`;
+                } else {
+                    feedbackDiv.className = 'feedback wrong';
+                    feedbackDiv.innerHTML = `
+                        ✕ Chưa đúng. Đáp án: <strong>${item.answer}</strong>
+                        <div class="explanation">${item.explanation || ''}</div>
+                    `;
+                }
+
+                feedbackDiv.style.display = 'block';
+            });
+
+            // Cập nhật điểm số trực quan trên thanh Control Panel
+            let percentage = Math.round((correctCount / total) * 100);
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            scoreDisplay.textContent = `Kết quả: ${correctCount}/${total} câu đúng — (${percentage}%)`;
+
+            if (percentage >= 80) {
+                scoreDisplay.style.color = 'var(--success)';
+            } else if (percentage >= 50) {
+                scoreDisplay.style.color = 'var(--warning)';
+            } else {
+                scoreDisplay.style.color = 'var(--danger)';
+            }
+
+            // Cuộn mượt lên trên cùng để xem tổng quan kết quả bài làm
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Reset toàn bộ form làm bài về trạng thái ban đầu
+        function resetQuiz() {
+            document.getElementById('quizForm').reset();
+            const feedbacks = document.querySelectorAll('.feedback');
+            feedbacks.forEach(fb => {
+                fb.style.display = 'none';
+                fb.innerHTML = '';
+            });
+            document.getElementById('scoreDisplay').textContent = `Kết quả: --/-- (0%)`;
+            document.getElementById('scoreDisplay').style.color = 'var(--text-main)';
+        }
+
+        // Chạy khởi tạo trang ngay khi tải xong cây thư mục DOM
+        document.addEventListener('DOMContentLoaded', initQuiz);
+    </script>
+</body>
+
+</html>

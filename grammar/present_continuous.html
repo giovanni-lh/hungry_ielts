@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý thuyết Thì Hiện tại Tiếp diễn — English Academy</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --bg-light: #f8fafc;
+            --border: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--text-main); margin: 0; background: #fdfdfd; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+        
+        .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--primary); text-decoration: none; }
+
+        .header-card {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .header-card h2 { margin: 0 0 0.5rem 0; color: #1e3a8a; font-size: 1.8rem; }
+        .header-card p { margin: 0; color: #1e40af; }
+
+        .theory-section {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+        .theory-section h3 { margin-top: 0; font-size: 1.3rem; color: var(--primary); border-bottom: 2px solid #eff6ff; padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+
+        /* Formula Table Styles */
+        .formula-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        .formula-table th, .formula-table td { border: 1px solid var(--border); padding: 0.75rem 1rem; text-align: left; }
+        .formula-table th { background-color: var(--bg-light); font-weight: 600; }
+        .formula-badge { display: inline-block; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+        .badge-pos { background-color: #dcfce7; color: #15803d; }
+        .badge-neg { background-color: #fee2e2; color: #b91c1c; }
+        .badge-que { background-color: #fef3c7; color: #b45309; }
+
+        /* Lists and Grid Layouts */
+        .usage-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem; }
+        @media (min-width: 640px) { .usage-grid { grid-template-columns: 1fr 1fr; } }
+        
+        .usage-card { background: var(--bg-light); border-left: 4px solid var(--primary); padding: 1rem; border-radius: 0 8px 8px 0; }
+        .usage-card minititle { display: block; font-weight: 600; margin-bottom: 0.25rem; color: #0f172a; }
+        
+        .example-text { font-style: italic; color: var(--text-muted); margin-top: 0.25rem; display: block; }
+        .highlight { color: var(--danger); font-weight: 600; }
+
+        .keyword-tag { display: inline-block; background: #f1f5f9; border: 1px solid var(--border); padding: 0.3rem 0.6rem; border-radius: 6px; margin: 0.25rem; font-size: 0.9rem; font-weight: 500; }
+        
+        blockquote { background: #fffbeb; border-left: 4px solid var(--warning); margin: 1rem 0; padding: 1rem; border-radius: 0 8px 8px 0; color: #92400e; font-size: 0.95rem; }
+        blockquote strong { color: #78350f; }
+
+        .nav-buttons { display: flex; justify-content: space-between; margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 1.5rem; }
+        .btn-nav { text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 500; font-size: 0.9rem; transition: background 0.2s; }
+        .btn-prev { background: #ffffff; color: var(--text-main); border: 1px solid var(--border); }
+        .btn-prev:hover { background: var(--bg-light); }
+        .btn-next { background: var(--primary); color: #ffffff; }
+        .btn-next:hover { background: var(--primary-hover); }
+    </style>
+</head>
+<body>
+
+    <header style="background: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h1 style="margin: 0; font-size: 1.4rem; color: var(--primary);">English Academy</h1>
+            <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">Lộ trình B1 ➔ IELTS Band 6–7</p>
+        </div>
+        <nav>
+            <a href="#" style="text-decoration: none; color: var(--text-main); font-weight: 500;">Học liệu</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="#">Trang chủ</a> ➔ <a href="#">Ngữ pháp</a> ➔ Thì Hiện tại Tiếp diễn
+        </div>
+
+        <section class="header-card">
+            <h2>Thì Hiện tại Tiếp diễn (Present Continuous Tense)</h2>
+            <p>Dùng để diễn tả những hành động đang xảy ra tại thời điểm nói hoặc xung quanh thời điểm nói, mang tính chất tạm thời.</p>
+        </section>
+
+        <section class="theory-section">
+            <h3><span>📝</span> 1. Cấu trúc (Form)</h3>
+            <p>Thành phần cốt lõi luôn bao gồm trợ động từ <strong>TO BE (am/is/are)</strong> và động từ thêm đuôi <strong>V-ing</strong>.</p>
+            
+            <table class="formula-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">Thể</th>
+                        <th>Cấu trúc tổng quát</th>
+                        <th>Ví dụ chi tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="formula-badge badge-pos">Khẳng định (+)</span></td>
+                        <td><strong>S + am / is / are + V-ing</strong></td>
+                        <td>
+                            • I <span class="highlight">am watching</span> TV right now.<br>
+                            • He/She/It <span class="highlight">is playing</span> football.<br>
+                            • We/You/They <span class="highlight">are studying</span> English.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="formula-badge badge-neg">Phủ định (-)</span></td>
+                        <td><strong>S + am / is / are + not + V-ing</strong></td>
+                        <td>
+                            • I <span class="highlight">am not listening</span> to music.<br>
+                            • He <span class="highlight">isn't (is not) working</span> today.<br>
+                            • They <span class="highlight">aren't (are not) coming</span>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="formula-badge badge-que">Nghi vấn (?)</span></td>
+                        <td>
+                            <strong>Am / Is / Are + S + V-ing?</strong><br>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Wh- + am/is/are + S + V-ing?</span>
+                        </td>
+                        <td>
+                            • <span class="highlight">Are you crying</span>?<br>
+                            • <span class="highlight">Is she cooking</span> dinner?<br>
+                            • What <span class="highlight">are they doing</span> at the moment?
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="theory-section">
+            <h3><span>💡</span> 2. Cách sử dụng (Usage)</h3>
+            <div class="usage-grid">
+                <div class="usage-card">
+                    <minititle>Hành động đang diễn ra tại thời điểm nói</minititle>
+                    <span>Diễn tả sự việc đang xảy ra ngay lúc chúng ta nói chuyện.</span>
+                    <span class="example-text">➔ Look! It <strong>is raining</strong> outside.</span>
+                </div>
+                <div class="usage-card">
+                    <minititle>Hành động đang diễn ra xung quanh thời điểm nói</minititle>
+                    <span>Sự việc mang tính tạm thời, có thể không xảy ra ngay đúng lúc nói.</span>
+                    <span class="example-text">➔ I <strong>am reading</strong> an interesting book this week.</span>
+                </div>
+                <div class="usage-card">
+                    <minititle>Kế hoạch, dự định chắc chắn trong tương lai gần</minititle>
+                    <span>Một lịch trình hoặc sắp xếp cụ thể đã được lên kế hoạch trước.</span>
+                    <span class="example-text">➔ We <strong>are flying</strong> to Paris this Friday.</span>
+                </div>
+                <div class="usage-card">
+                    <minititle>Sự phàn nàn về một thói quen xấu (Đi với Always)</minititle>
+                    <span>Diễn tả sự bực mình, lặp đi lặp lại gây khó chịu.</span>
+                    <span class="example-text">➔ You <strong>are always losing</strong> your keys!</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="theory-section">
+            <h3><span>⚡</span> 3. Quy tắc thêm đuôi "-ing" (Spelling Rules)</h3>
+            <ul style="padding-left: 1.25rem; margin: 0 0 1rem 0;">
+                <li style="margin-bottom: 0.5rem;"><strong>Quy tắc thông thường:</strong> Chỉ cần thêm trực tiếp đuôi <code>-ing</code> vào sau động từ. (Ví dụ: <em>do ➔ doing, walk ➔ walking, cook ➔ cooking</em>).</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Tận cùng là một chữ "e" đơn:</strong> Bỏ <code>e</code> rồi mới thêm <code>-ing</code>. (Ví dụ: <em>write ➔ writing, take ➔ taking, make ➔ making</em>). <span style="color:var(--danger)">*Lưu ý: Nếu tận cùng là "ee" thì giữ nguyên: see ➔ seeing</span>.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Động từ 1 âm tiết có cấu trúc Phụ âm - Nguyên âm - Phụ âm (CVC):</strong> Gấp đôi phụ âm cuối trước khi thêm <code>-ing</code>. (Ví dụ: <em>run ➔ running, stop ➔ stopped, sit ➔ sitting</em>).</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Tận cùng là đuôi "ie":</strong> Đổi thành <code>y</code> rồi mới thêm <code>-ing</code>. (Ví dụ: <em>die ➔ dying, lie ➔ lying</em>).</li>
+            </ul>
+        </section>
+
+        <section class="theory-section">
+            <h3><span>🔍</span> 4. Dấu hiệu nhận biết (Signal Words)</h3>
+            <p style="margin-top: 0;">Khi trong câu xuất hiện các trạng từ hoặc trạng ngữ chỉ thời gian sau đây:</p>
+            
+            <div style="margin-bottom: 1rem;">
+                <span class="keyword-tag">Now (Bây giờ)</span>
+                <span class="keyword-tag">Right now (Ngay bây giờ)</span>
+                <span class="keyword-tag">At the moment (Lúc này)</span>
+                <span class="keyword-tag">At present (Hiện tại)</span>
+                <span class="keyword-tag">Today / This week</span>
+            </div>
+
+            <p style="margin-bottom: 0.5rem;">Hoặc đứng sau các động từ gây chú ý có dấu chấm than (Imperative verbs):</p>
+            <div style="padding-left: 0.5rem; border-left: 3px solid #cbd5e1; font-style: italic;">
+                • <strong>Look!</strong> The bus is coming. (Nhìn kìa! Xe buýt đang đến.)<br>
+                • <strong>Listen!</strong> Someone is singing. (Nghe kìa! Ai đó đang hát.)<br>
+                • <strong>Keep silent!</strong> The baby is sleeping. (Trật tự nào! Em bé đang ngủ.)
+            </div>
+        </section>
+
+        <section class="theory-section">
+            <h3><span>⚠️</span> 5. Lưu ý quan trọng (Stative Verbs)</h3>
+            <blockquote>
+                Không dùng thì Hiện tại Tiếp diễn với các <strong>Động từ chỉ trạng thái (Stative Verbs)</strong> thuộc nhóm nhận thức, cảm xúc, sở hữu. Thay vào đó, ta chia ở thì <em>Hiện tại Đơn</em>.
+            </blockquote>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Các động từ trạng thái phổ biến:</strong></p>
+            <ul>
+                <li>Cảm xúc: <em>love, hate, like, want, prefer</em></li>
+                <li>Nhận thức/Suy nghĩ: <em>know, understand, believe, remember, forget</em></li>
+                <li>Sở hữu: <em>have (khi nghĩa là sở hữu), own, belong to</em></li>
+            </ul>
+            <p style="font-size: 0.95rem;">
+                <span style="color: var(--danger); font-weight: bold;">✗ Sai:</span> I am knowing the answer.<br>
+                <span style="color: var(--success); font-weight: bold;">✓ Đúng:</span> I know the answer.
+            </p>
+        </section>
+
+        <div class="nav-buttons">
+            <a href="past_simple_exercises.html" class="btn-nav btn-prev">← Bài tập Past Simple</a>
+            <a href="present_continuous_exercises.html" class="btn-nav btn-next">Làm bài tập Present Continuous →</a>
+        </div>
+    </main>
+
+</body>
+</html>
