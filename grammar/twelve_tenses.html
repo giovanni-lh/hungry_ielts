@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1: 12 Thì Cơ Bản Trong Tiếng Anh</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--primary); text-decoration: none; }
+        
+        /* Timeline Component */
+        .timeline-container { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+        .timeline-axis { height: 4px; background: #cbd5e1; margin: 2rem 0 1rem; position: relative; display: flex; justify-content: space-between; }
+        .timeline-point { width: 12px; height: 12px; background: var(--primary); border-radius: 50%; top: -4px; position: relative; }
+        .timeline-label { position: absolute; top: -25px; transform: translateX(-35%); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
+        .past-label { color: #b45309; } .present-label { color: #16a34a; } .future-label { color: #1e40af; }
+        .timeline-desc { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; }
+
+        /* Tense Matrix Grid Layout */
+        .matrix-container { display: grid; grid-template-columns: 80px repeat(3, 1fr); gap: 0.75rem; margin-top: 1.5rem; overflow-x: auto; }
+        .matrix-header { font-weight: bold; text-align: center; padding: 0.5rem; border-radius: 6px; font-size: 0.8rem; text-transform: uppercase; color: white; }
+        .hdr-past { background: #dfebf6; color: #1e40af; }
+        .hdr-present { background: #dcfce7; color: #15803d; }
+        .hdr-future { background: #ede9fe; color: #6d28d9; }
+        
+        .aspect-label { display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.75rem; background: #f1f5f9; border-radius: 6px; text-transform: uppercase; writing-mode: vertical-lr; transform: rotate(180deg); padding: 0.25rem; }
+        
+        /* Interactive Small Tense Cells */
+        .tense-cell { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem; font-size: 0.8rem; display: flex; flex-direction: column; justify-content: space-between; }
+        .cell-past { border-top: 3px solid #2563eb; }
+        .cell-present { border-top: 3px solid #16a34a; }
+        .cell-future { border-top: 3px solid #8b5cf6; }
+        
+        .tense-cell h4 { font-size: 0.85rem; margin-bottom: 0.25rem; }
+        .formula { background: #0f172a; color: #f8fafc; font-family: monospace; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.75rem; margin: 0.25rem 0; word-break: break-all; }
+        .example-box { font-style: italic; color: var(--text-main); margin-top: 0.4rem; border-left: 2px solid #cbd5e1; padding-left: 0.4rem; }
+        .example-box span { display: block; font-size: 0.7rem; color: var(--text-muted); font-style: normal; }
+        
+        .cell-link { font-size: 0.7rem; color: var(--primary); text-decoration: none; margin-top: 0.5rem; text-align: right; display: block; font-weight: 500; }
+
+        /* Split-view Rules */
+        .contrast-block { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; }
+        .contrast-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.75rem; }
+        .contrast-pane { background: #f8fafc; padding: 0.75rem; border-radius: 8px; font-size: 0.85rem; }
+        
+        @media (max-width: 768px) {
+            .matrix-container { grid-template-columns: 1fr; }
+            .aspect-label { writing-mode: horizontal-tb; transform: none; padding: 0.5rem; }
+            .contrast-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>English Academy</h1>
+            <p>Lộ trình B1 ➔ IELTS Band 6–7 cho học sinh Việt Nam</p>
+        </div>
+        <nav>
+            <a href="../index.html">Trang chủ</a>
+            <a href="grammar.html">Ngữ pháp</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Trang chủ</a> ➔ <a href="grammar.html">Ngữ pháp</a> ➔ 12 Thì cơ bản
+        </div>
+
+        <section class="hero">
+            <span class="badge">Ngữ pháp • Bài 1</span>
+            <h2>12 Thì cơ bản trong Tiếng Anh</h2>
+            <p>Tổng quan toàn bộ hệ thống thì (tenses) theo trục thời gian. Đây là <strong>"bản đồ"</strong> giúp em định vị mọi hành động diễn ra trong văn nói và văn viết. Hãy hiểu bản chất trước khi học thuộc lòng cấu trúc câu.</p>
+            <div class="tip" style="margin-top:1rem; background: #fff;">
+                💡 <strong>Mẹo xem bảng:</strong> Đọc bảng theo <strong>hàng ngang</strong> để thấy cách một "Thể" biến đổi qua 3 mốc thời gian. Đọc theo <strong>cột dọc</strong> để thấy tại một mốc thời gian có 4 cách diễn đạt khác nhau tùy bản chất.
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">1. Thì (Tense) là gì?</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">Trong tiếng Anh, hình thái của động từ cho biết hai thông tin cốt lõi: <strong>Hành động xảy ra khi nào</strong> và <strong>Hành động diễn ra như thế nào</strong>.</p>
+            <div class="tip" style="background: #f1f5f9; border-left-color: #64748b; margin-bottom: 1.5rem;">
+                <strong>Công thức hệ thống:</strong> Thời gian (Time) $\times$ Thể (Aspect) $=$ 12 Thì cơ bản.<br>
+                • <strong>3 Mốc thời gian:</strong> Quá khứ (Past) • Hiện tại (Present) • Tương lai (Future)<br>
+                • <strong>4 Thể hành động:</strong> Đơn (Simple) • Tiếp diễn (Continuous) • Hoàn thành (Perfect) • Hoàn thành tiếp diễn (Perfect Continuous)
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">2. Trục thời gian (Timeline)</h3>
+            <div class="timeline-container">
+                <div class="timeline-axis">
+                    <div class="timeline-point"><span class="timeline-label past-label">Quá khứ</span></div>
+                    <div class="timeline-point" style="left:50%; background:#16a34a;"><span class="timeline-label present-label" style="transform:translateX(-50%);">Hiện tại</span></div>
+                    <div class="timeline-point" style="left:100%; background:#8b5cf6;"><span class="timeline-label future-label" style="transform:translateX(-100%);">Tương lai</span></div>
+                </div>
+                <ul class="timeline-desc" style="padding-left:1rem; line-height:1.6;">
+                    <li>📌 <strong>Simple (Đơn):</strong> Diễn tả một điểm thời gian, một sự thật hiển nhiên hoặc thói quen lặp đi lặp lại.</li>
+                    <li>🔄 <strong>Continuous (Tiếp diễn):</strong> Diễn tả hành động đang chạy kéo dài tại một thời điểm hoặc tiến trình chưa hoàn thành.</li>
+                    <li>✅ <strong>Perfect (Hoàn thành):</strong> Diễn tả hành động đã kết thúc trọn vẹn trước một điểm mốc thời gian xác định.</li>
+                    <li>⏳ <strong>Perfect Continuous (Hoàn thành tiếp diễn):</strong> Diễn tả hành động kéo dài liên tục từ quá khứ tới sát một mốc thời gian.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">3. Bảng tổng hợp 12 Thì</h3>
+            <div class="matrix-container">
+                <div></div> <div class="matrix-header hdr-past">QUÁ KHỨ (Past)</div>
+                <div class="matrix-header hdr-present">HIỆN TẠI (Present)</div>
+                <div class="matrix-header hdr-future">TƯƠNG LAI (Future)</div>
+
+                <div class="aspect-label">Simple</div>
+                
+                <div class="tense-cell cell-past">
+                    <h4>Past Simple</h4>
+                    <div class="formula">S + V2/V-ed</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Hành động đã xảy ra và chấm dứt hoàn toàn trong quá khứ, rõ thời gian.</p>
+                    <div class="example-box">I <strong>visited</strong> Hanoi last year.<span>Tôi đã đi thăm Hà Nội năm ngoái.</span></div>
+                    <a href="past_simple.html" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="tense-cell cell-present">
+                    <h4>Present Simple</h4>
+                    <div class="formula">S + V(s/es)</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Thói quen, sự thật hiển nhiên, lịch trình cố định ở hiện tại.</p>
+                    <div class="example-box">She <strong>goes</strong> to school every day.<span>Cô ấy đi học mỗi ngày.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 200 bài tập ➔</a>
+                </div>
+
+                <div class="tense-cell cell-future">
+                    <h4>Future Simple</h4>
+                    <div class="formula">S + will + V</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Quyết định tức thời lúc nói, phán đoán vô căn cứ hoặc lời hứa.</p>
+                    <div class="example-box">I <strong>will call</strong> you tonight.<span>Tôi sẽ gọi cho bạn tối nay.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="aspect-label">Continuous</div>
+                
+                <div class="tense-cell cell-past">
+                    <h4>Past Continuous</h4>
+                    <div class="formula">S + was/were + V-ing</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Hành động đang xảy ra tại một thời điểm chính xác trong quá khứ.</p>
+                    <div class="example-box">I <strong>was sleeping</strong> when she called.<span>Tôi đang ngủ thì cô ấy gọi đến.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="tense-cell cell-present">
+                    <h4>Present Continuous</h4>
+                    <div class="formula">S + am/is/are + V-ing</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Hành động đang xảy ra ngay lúc nói hoặc kế hoạch chắc chắn.</p>
+                    <div class="example-box">They <strong>are studying</strong> now.<span>Bây giờ họ đang học bài.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="tense-cell cell-future">
+                    <h4>Future Continuous</h4>
+                    <div class="formula">S + will be + V-ing</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Hành động sẽ đang diễn ra tại một thời điểm cụ thể trong tương lai.</p>
+                    <div class="example-box">This time tomorrow I <strong>will be flying</strong> to Tokyo.<span>Giờ này ngày mai tôi đang bay đi Tokyo.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="aspect-label">Perfect</div>
+                
+                <div class="tense-cell cell-past">
+                    <h4>Past Perfect</h4>
+                    <div class="formula">S + had + V3/V-ed</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Hành động xảy ra và hoàn thành trước một hành động quá khứ khác.</p>
+                    <div class="example-box">She <strong>had left</strong> before I arrived.<span>Cô ấy đã đi trước khi tôi đến nơi.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="tense-cell cell-present">
+                    <h4>Present Perfect</h4>
+                    <div class="formula">S + have/has + V3/V-ed</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Hành động xảy ra trong quá khứ nhưng kết quả liên quan tới hiện tại.</p>
+                    <div class="example-box">I <strong>have finished</strong> my homework.<span>Tôi đã làm xong bài tập về nhà.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="tense-cell cell-future">
+                    <h4>Future Perfect</h4>
+                    <div class="formula">S + will have + V3/V-ed</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Hành động sẽ hoàn thành trước một thời điểm ở tương lai.</p>
+                    <div class="example-box">By 2030, I <strong>will have graduated</strong>.<span>Trước năm 2030, tôi sẽ tốt nghiệp rồi.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="aspect-label" style="font-size:0.65rem;">Perf. Cont</div>
+                
+                <div class="tense-cell cell-past">
+                    <h4>Past Perfect Cont.</h4>
+                    <div class="formula">S + had been + V-ing</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Nhấn mạnh thời gian liên tục của hành động trước một mốc quá khứ.</p>
+                    <div class="example-box">He <strong>had been working</strong> for 5 hours before he rested.<span>Anh ấy đã làm việc liên tục 5 tiếng trước khi nghỉ.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="tense-cell cell-present">
+                    <h4>Present Perfect Cont.</h4>
+                    <div class="formula">S + have/has been + V-ing</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Hành động bắt đầu quá khứ, kéo dài liên tục và còn tiếp diễn ở hiện tại.</p>
+                    <div class="example-box">I <strong>have been learning</strong> English for 3 years.<span>Tôi đã học tiếng Anh liên tục được 3 năm rồi.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+
+                <div class="tense-cell cell-future">
+                    <h4>Future Perfect Cont.</h4>
+                    <div class="formula">S + will have been + V-ing</div>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">Nhấn mạnh tính liên tục của hành động tính đến một mốc ở tương lai.</p>
+                    <div class="example-box">By June, I <strong>will have been working</strong> here for 2 years.<span>Đến tháng 6, tôi sẽ làm việc ở đây tròn 2 năm liên tục.</span></div>
+                    <a href="#" class="cell-link">Học chi tiết + 230 bài tập ➔</a>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 3rem;">
+            <h2 class="section-title">4. Xem trước các cặp thì hay nhầm lẫn</h2>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Lỗi sai kinh điển của học sinh Việt Nam khi làm bài thi trắc nghiệm và viết luận:</p>
+
+            <div class="contrast-block">
+                <strong>Present Simple vs Present Continuous</strong>
+                <div class="contrast-grid">
+                    <div class="contrast-pane">
+                        <span class="badge" style="background:#16a34a;">Simple</span> Thói quen dài hạn.
+                        <p style="margin-top:0.4rem;">I <strong>drink</strong> coffee every morning.</p>
+                    </div>
+                    <div class="contrast-pane">
+                        <span class="badge" style="background:#2563eb;">Continuous</span> Đang xảy ra lúc nói.
+                        <p style="margin-top:0.4rem;">I <strong>am drinking</strong> coffee now.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contrast-block">
+                <strong>Present Perfect vs Past Simple</strong>
+                <div class="contrast-grid">
+                    <div class="contrast-pane">
+                        <span class="badge" style="background:#16a34a;">Past Simple</span> Có mốc thời gian rõ ràng quá khứ.
+                        <p style="margin-top:0.4rem;">I <strong>saw</strong> that film <strong>yesterday</strong>.</p>
+                    </div>
+                    <div class="contrast-pane">
+                        <span class="badge" style="background:#2563eb;">Present Perfect</span> Không nêu thời gian, liên quan hiện tại.
+                        <p style="margin-top:0.4rem;">I <strong>have seen</strong> that film before.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contrast-block">
+                <strong>Will vs Be going to</strong>
+                <div class="contrast-grid">
+                    <div class="contrast-pane">
+                        <span class="badge" style="background:#16a34a;">Will</span> Quyết định bộc phát tức thời lúc nói.
+                        <p style="margin-top:0.4rem;">The phone is ringing — I <strong>'ll get</strong> it.</p>
+                    </div>
+                    <div class="contrast-pane">
+                        <span class="badge" style="background:#2563eb;">Be going to</span> Kế hoạch định trước hoặc có bằng chứng rõ.
+                        <p style="margin-top:0.4rem;">I <strong>'m going to visit</strong> Da Nang this summer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background:#fff; border:1px solid var(--border); padding:1.5rem; border-radius:12px; margin-top:3rem;">
+            <h3>Bước tiếp theo hành trình của em 🚀</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.5rem; line-height:1.6;">
+                Bài học này cung cấp bức tranh tổng quan toàn diện. Ở các bài học con tiếp theo, mỗi thì sẽ được mổ xẻ sâu hơn bao gồm: 
+                Cấu trúc khẳng định / phủ định / nghi vấn đầy đủ, các trường hợp dùng nâng cao, bẫy lỗi thường gặp và các mẹo tối ưu điểm số cho kỹ năng IELTS Writing & Speaking để bứt phá lên Band 6.5+.
+            </p>
+            <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem;">
+                <a href="tense_contrasts.html" class="btn">Luyện phân biệt cặp thì (Cấp 2) ➔</a>
+                <a href="grammar.html" class="btn" style="background:#e2e8f0; color:var(--text-main);">Quay lại lộ trình</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
