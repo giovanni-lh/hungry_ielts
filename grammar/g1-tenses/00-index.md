@@ -1,6 +1,10 @@
 # 12 Thì cơ bản trong Tiếng Anh
 
-📚 [Thư viện](../README.md) • 📘 [Ngữ pháp](../README.md) • 🗺️ [Lộ trình](../../README.md)
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md)
+
+---
 
 🎯 **Bài học trong cấp này**
 
