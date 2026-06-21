@@ -4,877 +4,136 @@
 
 *Ngữ pháp - Thì #2 (Hiện tại tiếp diễn) - Đáp án & Giải thích*
 
-## A. Trắc nghiệm (Multiple Choice)
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](04-present-continuous.md) | [← Bài tập](05-present-continuous-practice.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---
+
+## 📋 Đáp án & Giải thích
 
 1. Look! The bus ___.
-- come
-- comes
-- is coming
-- are coming
+**Đáp án:** is coming
+**Gợi ý:** Chủ ngữ "The bus" là danh từ số ít, hành động đang xảy ra ngay lúc nói (Look!).
 
 2. I ___ a letter at the moment.
-- write
-- am writing
-- is writing
-- writing
+**Đáp án:** am writing
+**Gợi ý:** Chủ ngữ là "I" đi với "am + V-ing", dấu hiệu "at the moment".
 
 3. They ___ football now.
-- play
-- are playing
-- is playing
-- plays
+**Đáp án:** are playing
+**Gợi ý:** Chủ ngữ "They" đi với "are + V-ing", dấu hiệu "now".
 
 4. She ___ TV right now.
-- watch
-- watches
-- is watching
-- are watching
+**Đáp án:** is watching
+**Gợi ý:** Chủ ngữ "She" đi với "is + V-ing", dấu hiệu "right now".
 
 5. Listen! Someone ___ .
-- sing
-- sings
-- is singing
-- are singing
+**Đáp án:** is singing
+**Gợi ý:** "Someone" là đại từ bất định tính là số ít, hành động gây chú ý ngay lúc nói (Listen!).
 
 6. We ___ for the bus now.
-- wait
-- are waiting
-- is waiting
-- waits
+**Đáp án:** are waiting
+**Gợi ý:** Chủ ngữ "We" đi với "are + V-ing", dấu hiệu "now".
 
 7. He ___ at the moment.
-- sleep
-- sleeps
-- is sleeping
-- are sleeping
+**Đáp án:** is sleeping
+**Gợi ý:** Chủ ngữ "He" đi với "is + V-ing", dấu hiệu "at the moment".
 
 8. ___ you listening to me?
-- Is
-- Am
-- Are
-- Do
+**Đáp án:** Are
+**Gợi ý:** Câu hỏi đảo trợ động từ To Be lên trước chủ ngữ "you" -> Are you + V-ing.
 
 9. The children ___ in the garden.
-- is playing
-- are playing
-- plays
-- play
+**Đáp án:** are playing
+**Gợi ý:** "The children" là danh từ số nhiều (những đứa trẻ) -> dùng "are".
 
 10. It ___ outside, take an umbrella.
-- rain
-- is raining
-- are raining
-- rains
+**Đáp án:** is raining
+**Gợi ý:** "Take an umbrella" chứng tỏ trời đang mưa tại thời điểm nói -> dùng Hiện tại tiếp diễn với chủ ngữ "It".
 
 11. My mom ___ dinner now.
-- cook
-- is cooking
-- cooks
-- are cooking
+**Đáp án:** is cooking
+**Gợi ý:** Chủ ngữ "My mom" là ngôi thứ ba số ít -> dùng "is + V-ing".
 
 12. I ___ a great book these days.
-- read
-- reads
-- am reading
-- is reading
+**Đáp án:** am reading
+**Gợi ý:** Dấu hiệu "these days" (dạo gần đây) diễn tả hành động mang tính tạm thời diễn ra xung quanh thời điểm nói.
 
 13. ___ she working today?
-- Do
-- Does
-- Is
-- Are
+**Đáp án:** Is
+**Gợi ý:** Câu hỏi thì hiện tại tiếp diễn với chủ ngữ số ít "she".
 
 14. We ___ to Hue next week.
-- travel
-- are travelling
-- is travelling
-- travels
+**Đáp án:** are travelling
+**Gợi ý:** Diễn tả một kế hoạch, lịch trình đã được sắp xếp trước trong tương lai gần.
 
 15. He ___ his homework right now.
-- do
-- does
-- is doing
-- are doing
+**Đáp án:** is doing
+**Gợi ý:** Chủ ngữ "He", dấu hiệu hành động đang diễn ra "right now".
 
 16. The dogs ___ loudly.
-- is barking
-- are barking
-- bark
-- barks
+**Đáp án:** are barking
+**Gợi ý:** "The dogs" có "s" là danh từ số nhiều -> dùng "are barking".
 
 17. I'm sorry, I ___ you.
-- am not hearing
-- don't hear
-- isn't hearing
-- not hear
+**Đáp án:** don't hear
+**Gợi ý:** "Hear" (nghe thấy) là động từ trạng thái (stative verb), thường không dùng ở dạng tiếp diễn ngay cả khi nói về hiện tại.
 
 18. What ___ you doing?
-- is
-- am
-- are
-- do
+**Đáp án:** are
+**Gợi ý:** Cấu trúc câu hỏi Wh-word: Wh + am/is/are + S + V-ing? Với "you" đi với "are".
 
 19. Be careful! You ___ too fast.
-- drive
-- is driving
-- are driving
-- drives
+**Đáp án:** are driving
+**Gợi ý:** Lời cảnh báo "Be careful!" cho thấy hành động lái xe quá nhanh đang diễn ra nguy hiểm.
 
 20. She ___ a beautiful dress today.
-- wear
-- wears
-- is wearing
-- are wearing
+**Đáp án:** is wearing
+**Gợi ý:** Diễn tả hành động tạm thời, hôm nay cô ấy mặc chiếc váy đó.
 
 21. The students ___ a test now.
-- take
-- takes
-- are taking
-- is taking
+**Đáp án:** are taking
+**Gợi ý:** "The students" số nhiều kết hợp trạng từ "now".
 
 22. Why ___ you crying?
-- is
-- am
-- are
-- do
+**Đáp án:** are
+**Gợi ý:** Cấu trúc câu hỏi từ để hỏi với chủ ngữ "you".
 
 23. My brother ___ to music right now.
-- listen
-- listens
-- is listening
-- are listening
+**Đáp án:** is listening
+**Gợi ý:** "My brother" tương đương "He" (số ít), hành động diễn ra "right now".
 
 24. Prices ___ these days.
-- rise
-- rises
-- are rising
-- is rising
+**Đáp án:** are rising
+**Gợi ý:** Dấu hiệu "these days", diễn tả một xu hướng, sự thay đổi đang diễn ra (giá cả đang tăng lên).
 
 25. I ___ now, call me later.
-- am working
-- work
-- works
-- is working
+**Đáp án:** am working
+**Gợi ý:** Hành động đang bận làm việc ngay lúc này nên yêu cầu gọi lại sau.
 
 26. ___ it snowing in the mountains?
-- Do
-- Does
-- Is
-- Are
+**Đáp án:** Is
+**Gợi ý:** Câu hỏi thì hiện tại tiếp diễn với thời tiết, chủ ngữ giả "it".
 
 27. They ___ a new house at the moment.
-- build
-- builds
-- are building
-- is building
+**Đáp án:** are building
+**Gợi ý:** Hành động mang tính chất kéo dài nhưng tạm thời ở hiện tại "at the moment".
 
 28. He ___ his keys all the time! (phàn nàn)
-- loses
-- is always losing
-- always lose
-- is losing always
+**Đáp án:** is always losing
+**Gợi ý:** Dùng "always" ở thì hiện tại tiếp diễn để diễn tả một sự phàn nàn, bực mình về một thói quen xấu lặp đi lặp lại.
 
 29. We ___ a movie now.
-- watch
-- are watching
-- is watching
-- watches
+**Đáp án:** are watching
+**Gợi ý:** Chủ ngữ "We" kết hợp trạng từ "now".
 
 30. Where ___ your father going?
-- are
-- do
-- am
-- is
-
----
-
-## B. Viết dạng V-ing đúng chính tả
-_Viết dạng -ing của động từ trong ngoặc (chỉ viết một từ V-ing)._
-
-1. play -> ___
-2. make -> ___
-3. run -> ___
-4. write -> ___
-5. sit -> ___
-6. study -> ___
-7. lie -> ___
-8. swim -> ___
-9. come -> ___
-10. go -> ___
-11. begin -> ___
-12. stop -> ___
-13. read -> ___
-14. cook -> ___
-15. die -> ___
-16. take -> ___
-17. get -> ___
-18. open -> ___
-19. listen -> ___
-20. fix -> ___
-21. travel -> ___
-22. shop -> ___
-23. dance -> ___
-24. win -> ___
-25. snow -> ___
-26. have -> ___
-27. cut -> ___
-28. carry -> ___
-29. drive -> ___
-30. put -> ___
-
----
-
-## C. Điền "to be" (am / is / are)
-_Điền am, is hoặc are để tạo câu hiện tại tiếp diễn._
-
-1. I ___ studying English now.
-2. She ___ cooking dinner.
-3. They ___ playing in the park.
-4. He ___ sleeping at the moment.
-5. We ___ watching a film.
-6. It ___ raining outside.
-7. You ___ doing great!
-8. The kids ___ drawing pictures.
-9. Lan ___ reading a book.
-10. My parents ___ working in the garden.
-11. I ___ not listening to music.
-12. The dog ___ running fast.
-13. Tom and I ___ studying together.
-14. The baby ___ crying.
-15. What ___ you doing?
-
----
-
-## D. Hoàn thành câu hỏi / phủ định
-_Điền am/is/are vào câu hỏi hoặc câu phủ định ở thì tiếp diễn._
-
-1. ___ she sleeping now?
-2. ___ they coming to the party?
-3. He ___ not working today.
-4. ___ you watching this?
-5. ___ your brother studying?
-6. We ___ not leaving yet.
-7. ___ it raining?
-8. She ___ not listening to me.
-9. ___ I doing it right?
-10. ___ the children playing outside?
-11. The phone ___ not working.
-12. ___ your friends waiting for you?
-13. They ___ not joking.
-14. ___ the bus coming?
-15. I ___ not feeling well today.
-
----
-
-## E. Viết lại câu ở dạng phủ định
-_Chuyển câu khẳng định sang phủ định._
-
-1. She is cooking dinner.
--> ___
-2. They are playing football.
--> ___
-3. He is sleeping.
--> ___
-4. I am watching TV.
--> ___
-5. We are studying English.
--> ___
-6. It is raining.
--> ___
-7. The baby is crying.
--> ___
-8. You are listening to music.
--> ___
-9. Tom is doing his homework.
--> ___
-10. The children are sleeping.
--> ___
-11. She is wearing a hat.
--> ___
-12. They are leaving now.
--> ___
-13. I am reading a book.
--> ___
-14. He is driving to work.
--> ___
-15. We are having lunch.
--> ___
-16. Lan is singing a song.
--> ___
-17. It is snowing.
--> ___
-18. My friends are waiting outside.
--> ___
-19. She is making a cake.
--> ___
-20. He is running fast.
--> ___
-21. The dog is barking.
--> ___
-22. I am learning to swim.
--> ___
-23. You are doing it wrong.
--> ___
-24. They are building a house.
--> ___
-25. We are watching a movie.
--> ___
-
----
-
-## F. Đặt câu hỏi Yes/No
-_Chuyển câu khẳng định thành câu hỏi Yes/No._
-
-1. She is cooking dinner.
--> ___
-2. They are playing football.
--> ___
-3. He is sleeping.
--> ___
-4. You are watching TV.
--> ___
-5. We are studying English.
--> ___
-6. It is raining.
--> ___
-7. The baby is crying.
--> ___
-8. Tom is doing his homework.
--> ___
-9. The children are sleeping.
--> ___
-10. She is wearing a hat.
--> ___
-11. They are leaving now.
--> ___
-12. He is driving to work.
--> ___
-13. We are having lunch.
--> ___
-14. Lan is singing a song.
--> ___
-15. It is snowing.
--> ___
-16. Your friends are waiting outside.
--> ___
-17. She is making a cake.
--> ___
-18. He is running fast.
--> ___
-19. The dog is barking.
--> ___
-20. You are learning to swim.
--> ___
-21. They are building a house.
--> ___
-22. Mai is reading a book.
--> ___
-23. The students are taking a test.
--> ___
-24. He is wearing glasses.
--> ___
-25. We are going home.
--> ___
-
----
-
-## G. Tìm và sửa lỗi sai
-_Mỗi câu có một lỗi. Viết lại câu cho đúng._
-
-1. She reading a book now.
--> ___
-2. They are play football.
--> ___
-3. He is running fast.
--> ___
-4. I am wanting a coffee.
--> ___
-5. Is she write a letter?
--> ___
-6. He is watching TV.
--> ___
-7. The baby are crying.
--> ___
-8. He is makeing a cake.
--> ___
-9. You are do it wrong.
--> ___
-10. I am study now.
--> ___
-11. She don't watching TV.
--> ___
-12. They is playing games.
--> ___
-13. It is rain now.
--> ___
-14. Are he sleeping?
--> ___
-15. He is sitting on the chair.
--> ___
-16. I am knowing the answer.
--> ___
-17. She is liing on the bed.
--> ___
-18. We are have dinner.
--> ___
-19. The dogs is barking.
--> ___
-20. Why you are crying?
--> ___
-21. He is swiming in the pool.
--> ___
-22. I not am working today.
--> ___
-23. She is wear a red dress.
--> ___
-24. Listen! The birds is singing.
--> ___
-25. Are you understand this?
--> ___
-
----
-
-## H. Sắp xếp & chia động từ thành câu
-_Sắp xếp các từ thành câu hoàn chỉnh và chia động từ trong ngoặc ở thì hiện tại tiếp diễn dựa vào dấu hiệu thời gian trong câu._
-
-1. now / she / (cook)
--> ___
-2. now / they / (play) / football
--> ___
-3. right now / I / (read) / a / book
--> ___
-4. Look! / it / (rain)
--> ___
-5. you / (watch) / TV / right now / ?
--> ___
-6. he / not / (sleep) / at the moment
--> ___
-7. the / baby / (sleep) / now
--> ___
-8. now / we / (study) / English
-    -> ___
-9. she / (wear) / a / hat / today / ?
-    -> ___
-10. right now / I / (listen) / to / music
-    -> ___
-11. the / children / (play) / outside / now
-    -> ___
-12. what / he / (do) / right now / ?
-    -> ___
-13. why / you / (cry) / now / ?
-    -> ___
-14. Look! / the / dog / (run) / fast
-    -> ___
-15. we / not / (leave) / yet
-    -> ___
-16. now / he / (make) / a / cake
-    -> ___
-17. where / you / (go) / right now / ?
-    -> ___
-18. these days / they / (build) / a / house
-    -> ___
-19. right now / he / (swim) / in / the / pool
-    -> ___
-20. these days / I / (prepare) / for / this / exam
-    -> ___
-
----
-
-## I. Hiện tại đơn hay Hiện tại tiếp diễn
-_Chọn thì đúng theo ngữ cảnh (thói quen -> hiện tại đơn; đang diễn ra/tạm thời -> hiện tại tiếp diễn)._
-
-1. I ___ to school every day.
-- go
-- am going
-
-2. Look! She ___ now.
-- dances
-- is dancing
-
-3. Water ___ at 100°C.
-- boils
-- is boiling
-
-4. Be quiet! The baby ___ .
-- sleeps
-- is sleeping
-
-5. He usually ___ coffee in the morning.
-- drinks
-- is drinking
-
-6. We ___ a film at the moment.
-- watch
-- are watching
-
-7. She ___ English every evening.
-- studies
-- is studying
-
-8. Listen! Someone ___ the piano.
-- plays
-- is playing
-
-9. The sun ___ in the east.
-- rises
-- is rising
-
-10. I ___ for my exams these days.
-- prepare
-- am preparing
-
-11. My father ___ to work by car.
-- goes
-- is going
-
-12. Why ___ you? Are you sad?
-- do / cry
-- are / crying
-
-13. Cats ___ milk.
-- like
-- are liking
-
-14. It often ___ in summer.
-- rains
-- is raining
-
-15. I can't talk now, I ___ dinner.
-- cook
-- am cooking
-
----
-
-## J. Dịch sang tiếng Anh
-_Dịch câu sang tiếng Anh ở thì hiện tại tiếp diễn._
-
-1. Tôi đang đọc một quyển sách.
--> ___
-2. Cô ấy đang nấu ăn.
--> ___
-3. Họ đang chơi bóng đá.
--> ___
-4. Trời đang mưa.
--> ___
-5. Bạn đang làm gì?
--> ___
-6. Em bé đang ngủ.
--> ___
-7. Chúng tôi đang xem một bộ phim.
--> ___
-8. Anh ấy không làm việc hôm nay.
--> ___
-9. Cô ấy đang mặc một chiếc váy đẹp.
--> ___
-10. Bạn có đang nghe tôi nói không?
--> ___
-11. Nhìn kìa! Xe buýt đang đến.
--> ___
-12. Tôi đang lái xe đi làm những ngày này.
--> ___
-13. Các em nhỏ đang vẽ tranh.
--> ___
-14. Con chó đang chạy nhanh.
--> ___
-15. Giá cả đang tăng.
--> ___
-16. Mẹ tôi đang làm bánh.
--> ___
-17. Tôi đang chuẩn bị cho kỳ thi.
--> ___
-18. Họ đang xây một ngôi nhà.
--> ___
-19. Cô ấy đang hát một bài hát.
--> ___
-20. Chúng tôi đang đi về nhà.
--> ___
-
----
-
-## K. Điền vào đoạn văn
-_Đọc đoạn văn (cảnh ở công viên ngay lúc này) và chia động từ trong ngoặc ở thì hiện tại tiếp diễn._
-
-It is Sunday afternoon and the park is busy. The sun 1. ___ brightly. (shine)
-A group of children 2. ___ football near the lake. (play)
-An old man 3. ___ on a bench. (sit)
-He 4. ___ a newspaper. (read)
-Two women 5. ___ along the path. (jog)
-A little girl 6. ___ an ice cream. (eat)
-Her mother 7. ___ photos of her. (take)
-Some teenagers 8. ___ music on their phones. (listen)
-A dog 9. ___ after a ball. (run)
-Near the gate, a man 10. ___ balloons. (sell)
-Two friends 11. ___ and laughing together. (talk)
-A young couple 12. ___ a picnic on the grass. (have)
-The birds 13. ___ in the tall trees. (sing)
-I 14. ___ all of this from my window. (watch)
-Everyone 15. ___ the beautiful weather. (enjoy)
-Extract the markdown from this but provide the markdown in txt file. only provide the question and answer and hint. if a question does not have hint or poor hint, please add
-
-Your text file containing the complete extracted grammar exercise structured in pristine Markdown with corrected/added clues is ready.
-
-Your TXT file is ready:
-Biểu tượng TXT
-present_continuous_exercises
- TXT 
-Đang mở
-
-Content Enhancements Applied
-Extracted Complete Sections: All parts from A through K have been meticulously structured out.
-
-Answers Included Safely: Directly embedded under each corresponding question as itemized nodes (- Đáp án:).
-
-Improved Grammar Hints: Poor, short, or missing hints from the source image screenshots have been replaced with full, educational Vietnamese explanations (- Gợi ý:). These highlight crucial rules such as singular/plural subjects, spelling variations for trailing letters (like -ing doubling rules for run/swim/sit), and strict guidelines regarding stative verbs (like know, want, understand, hear) that generally cannot take continuous forms.
-
-
-
-
-Gemini là AI và có thể mắc sai sót.
-
-# Present Continuous — Hiện tại tiếp diễn (Bài tập)
-
-## A. Trắc nghiệm
-_Chọn đáp án đúng để hoàn thành câu (thì hiện tại tiếp diễn)._
-
-1. Look! The bus ___.
-- come
-- comes
-- is coming
-- are coming
-- **Đáp án:** is coming
-- **Gợi ý:** Chủ ngữ "The bus" là danh từ số ít, hành động đang xảy ra ngay lúc nói (Look!).
-
-2. I ___ a letter at the moment.
-- write
-- am writing
-- is writing
-- writing
-- **Đáp án:** am writing
-- **Gợi ý:** Chủ ngữ là "I" đi với "am + V-ing", dấu hiệu "at the moment".
-
-3. They ___ football now.
-- play
-- are playing
-- is playing
-- plays
-- **Đáp án:** are playing
-- **Gợi ý:** Chủ ngữ "They" đi với "are + V-ing", dấu hiệu "now".
-
-4. She ___ TV right now.
-- watch
-- watches
-- is watching
-- are watching
-- **Đáp án:** is watching
-- **Gợi ý:** Chủ ngữ "She" đi với "is + V-ing", dấu hiệu "right now".
-
-5. Listen! Someone ___ .
-- sing
-- sings
-- is singing
-- are singing
-- **Đáp án:** is singing
-- **Gợi ý:** "Someone" là đại từ bất định tính là số ít, hành động gây chú ý ngay lúc nói (Listen!).
-
-6. We ___ for the bus now.
-- wait
-- are waiting
-- is waiting
-- waits
-- **Đáp án:** are waiting
-- **Gợi ý:** Chủ ngữ "We" đi với "are + V-ing", dấu hiệu "now".
-
-7. He ___ at the moment.
-- sleep
-- sleeps
-- is sleeping
-- are sleeping
-- **Đáp án:** is sleeping
-- **Gợi ý:** Chủ ngữ "He" đi với "is + V-ing", dấu hiệu "at the moment".
-
-8. ___ you listening to me?
-- Is
-- Am
-- Are
-- Do
-- **Đáp án:** Are
-- **Gợi ý:** Câu hỏi đảo trợ động từ To Be lên trước chủ ngữ "you" -> Are you + V-ing.
-
-9. The children ___ in the garden.
-- is playing
-- are playing
-- plays
-- play
-- **Đáp án:** are playing
-- **Gợi ý:** "The children" là danh từ số nhiều (những đứa trẻ) -> dùng "are".
-
-10. It ___ outside, take an umbrella.
-- rain
-- is raining
-- are raining
-- rains
-- **Đáp án:** is raining
-- **Gợi ý:** "Take an umbrella" chứng tỏ trời đang mưa tại thời điểm nói -> dùng Hiện tại tiếp diễn với chủ ngữ "It".
-
-11. My mom ___ dinner now.
-- cook
-- is cooking
-- cooks
-- are cooking
-- **Đáp án:** is cooking
-- **Gợi ý:** Chủ ngữ "My mom" là ngôi thứ ba số ít -> dùng "is + V-ing".
-
-12. I ___ a great book these days.
-- read
-- reads
-- am reading
-- is reading
-- **Đáp án:** am reading
-- **Gợi ý:** Dấu hiệu "these days" (dạo gần đây) diễn tả hành động mang tính tạm thời diễn ra xung quanh thời điểm nói.
-
-13. ___ she working today?
-- Do
-- Does
-- Is
-- Are
-- **Đáp án:** Is
-- **Gợi ý:** Câu hỏi thì hiện tại tiếp diễn với chủ ngữ số ít "she".
-
-14. We ___ to Hue next week.
-- travel
-- are travelling
-- is travelling
-- travels
-- **Đáp án:** are travelling
-- **Gợi ý:** Diễn tả một kế hoạch, lịch trình đã được sắp xếp trước trong tương lai gần.
-
-15. He ___ his homework right now.
-- do
-- does
-- is doing
-- are doing
-- **Đáp án:** is doing
-- **Gợi ý:** Chủ ngữ "He", dấu hiệu hành động đang diễn ra "right now".
-
-16. The dogs ___ loudly.
-- is barking
-- are barking
-- bark
-- barks
-- **Đáp án:** are barking
-- **Gợi ý:** "The dogs" có "s" là danh từ số nhiều -> dùng "are barking".
-
-17. I'm sorry, I ___ you.
-- am not hearing
-- don't hear
-- isn't hearing
-- not hear
-- **Đáp án:** don't hear
-- **Gợi ý:** "Hear" (nghe thấy) là động từ trạng thái (stative verb), thường không dùng ở dạng tiếp diễn ngay cả khi nói về hiện tại.
-
-18. What ___ you doing?
-- is
-- am
-- are
-- do
-- **Đáp án:** are
-- **Gợi ý:** Cấu trúc câu hỏi Wh-word: Wh + am/is/are + S + V-ing? Với "you" đi với "are".
-
-19. Be careful! You ___ too fast.
-- drive
-- is driving
-- are driving
-- drives
-- **Đáp án:** are driving
-- **Gợi ý:** Lời cảnh báo "Be careful!" cho thấy hành động lái xe quá nhanh đang diễn ra nguy hiểm.
-
-20. She ___ a beautiful dress today.
-- wear
-- wears
-- is wearing
-- are wearing
-- **Đáp án:** is wearing
-- **Gợi ý:** Diễn tả hành động tạm thời, hôm nay cô ấy mặc chiếc váy đó.
-
-21. The students ___ a test now.
-- take
-- takes
-- are taking
-- is taking
-- **Đáp án:** are taking
-- **Gợi ý:** "The students" số nhiều kết hợp trạng từ "now".
-
-22. Why ___ you crying?
-- is
-- am
-- are
-- do
-- **Đáp án:** are
-- **Gợi ý:** Cấu trúc câu hỏi từ để hỏi với chủ ngữ "you".
-
-23. My brother ___ to music right now.
-- listen
-- listens
-- is listening
-- are listening
-- **Đáp án:** is listening
-- **Gợi ý:** "My brother" tương đương "He" (số ít), hành động diễn ra "right now".
-
-24. Prices ___ these days.
-- rise
-- rises
-- are rising
-- is rising
-- **Đáp án:** are rising
-- **Gợi ý:** Dấu hiệu "these days", diễn tả một xu hướng, sự thay đổi đang diễn ra (giá cả đang tăng lên).
-
-25. I ___ now, call me later.
-- am working
-- work
-- works
-- is working
-- **Đáp án:** am working
-- **Gợi ý:** Hành động đang bận làm việc ngay lúc này nên yêu cầu gọi lại sau.
-
-26. ___ it snowing in the mountains?
-- Do
-- Does
-- Is
-- Are
-- **Đáp án:** Is
-- **Gợi ý:** Câu hỏi thì hiện tại tiếp diễn với thời tiết, chủ ngữ giả "it".
-
-27. They ___ a new house at the moment.
-- build
-- builds
-- are building
-- is building
-- **Đáp án:** are building
-- **Gợi ý:** Hành động mang tính chất kéo dài nhưng tạm thời ở hiện tại "at the moment".
-
-28. He ___ his keys all the time! (phàn nàn)
-- loses
-- is always losing
-- always lose
-- is losing always
-- **Đáp án:** is always losing
-- **Gợi ý:** Dùng "always" ở thì hiện tại tiếp diễn để diễn tả một sự phàn nàn, bực mình về một thói quen xấu lặp đi lặp lại.
-
-29. We ___ a movie now.
-- watch
-- are watching
-- is watching
-- watches
-- **Đáp án:** are watching
-- **Gợi ý:** Chủ ngữ "We" kết hợp trạng từ "now".
-
-30. Where ___ your father going?
-- are
-- do
-- am
-- is
-- **Đáp án:** is
-- **Gợi ý:** "Your father" là danh từ số ít ngôi thứ ba, đi với trợ động từ "is".
+**Đáp án:** is
+**Gợi ý:** "Your father" là danh từ số ít ngôi thứ ba, đi với trợ động từ "is".
 
 ---
 
@@ -1776,3 +1035,12 @@ It is Sunday afternoon and the park is busy.
 15. Everyone ___ the beautiful weather. (enjoy)
 - **Đáp án:** is enjoying
 - **Gợi ý:** Đại từ bất định "Everyone" (Mọi người) luôn luôn được tính là một chủ ngữ ngôi thứ ba số ít trong ngữ pháp tiếng Anh -> chọn trợ động từ "is".
+
+---
+
+## 🔗 Quay lại
+
+| [Bài tập](05-present-continuous-practice.md) | [Lý thuyết](04-present-continuous.md) | [Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+**Mẹo:** Hoàn thành bài tập trước khi xem đáp án. Cố gắng đạt ≥ 80% mới chuyển sang bài học tiếp theo.

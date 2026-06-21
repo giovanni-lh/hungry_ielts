@@ -4,245 +4,134 @@
 
 *Ngữ pháp - Thì #3 (Hiện tại hoàn thành) - Đáp án & Giải thích*
 
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](07-present-perfect.md) | [← Bài tập](07-present-perfect-practice.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---
+
 ## A. Trắc nghiệm (Multiple Choice)
 
 1. I ___ my homework already.
-- have finish
-- finished
-- have finished
-- has finished
 **Đáp án:** have finished
 **Gợi ý:** Với chủ ngữ "I", ta dùng cấu trúc hiện tại hoàn thành: S + have + V3. Động từ "finish" hợp quy tắc đổi thành "finished".
 
 2. She ___ to Japan twice.
-- have been
-- has been
-- has gone
-- have gone
 **Đáp án:** has been
 **Gợi ý:** "She" đi với trợ động từ "has". Dùng "has been" để diễn tả việc ai đó đã từng đi đâu và đã quay trở về.
 
 3. ___ you ever eaten sushi?
-- Has
-- Have
-- Did
-- Do
 **Đáp án:** Have
 **Gợi ý:** Cấu trúc câu hỏi Kinh nghiệm: Have + you + ever + V3?
 
 4. He ___ his keys. He can't find them.
-- have lost
-- has lost
-- lost
-- has lose
 **Đáp án:** has lost
 **Gợi ý:** Diễn tả hành động xảy ra trong quá khứ nhưng để lại kết quả ở hiện tại (không tìm thấy chìa khóa). Chủ ngữ "He" dùng "has" + V3 (lost).
 
 5. We ___ each other for ten years.
-- have known
-- has known
-- knew
-- have know
 **Đáp án:** have known
 **Gợi ý:** Trạng ngữ "for ten years" chỉ khoảng thời gian kéo dài đến hiện tại. Chủ ngữ số nhiều "We" dùng "have known".
 
 6. They ___ arrived yet.
-- haven't
-- hasn't
-- didn't
-- don't
 **Đáp án:** haven't
 **Gợi ý:** Từ nhận biết "yet" dùng trong câu phủ định thì hiện tại hoàn thành. Chủ ngữ số nhiều "They" đi với "haven't".
 
 7. My sister ___ just left.
-- have
-- has
-- is
-- did
 **Đáp án:** has
 **Gợi ý:** Trạng từ "just" biểu thị hành động vừa mới xảy ra. "My sister" là danh từ ngôi thứ ba số ít nên đi với trợ động từ "has".
 
 8. I have lived here ___ 2015.
-- for
-- since
-- from
-- in
 **Đáp án:** since
 **Gợi ý:** "2015" là một mốc thời gian cụ thể trong quá khứ, ta sử dụng giới từ "since".
 
 9. She has worked here ___ five years.
-- since
-- for
-- from
-- at
 **Đáp án:** for
 **Gợi ý:** "five years" là một khoảng thời gian dài, ta sử dụng giới từ "for".
 
 10. ___ he finished the report?
-- Have
-- Has
-- Did
-- Do
 **Đáp án:** Has
 **Gợi ý:** Câu hỏi nghi vấn hiện tại hoàn thành với ngôi số ít "he": Has + he + V3?
 
 11. I have never ___ such a beautiful place.
-- see
-- saw
-- seen
-- seeing
 **Đáp án:** seen
 **Gợi ý:** Cấu trúc S + have + never + V3. Dạng quá khứ phân từ (V3) của "see" là "seen".
 
 12. We ___ this film three times.
-- have watched
-- has watched
-- watch
-- watched
 **Đáp án:** have watched
 **Gợi ý:** Diễn tả hành động lặp đi lặp lại nhiều lần tính đến thời điểm hiện tại ("three times"), sử dụng cấu trúc "have watched" cho chủ ngữ "We".
 
 13. Mum ___ gone to the market.
-- have
-- has
-- is
-- was
 **Đáp án:** has
 **Gợi ý:** "Mum" là danh từ số ít (tương đương với chủ ngữ She) -> dùng trợ động từ "has".
 
 14. Tom and Jerry ___ broken the window.
-- have
-- has
-- is
-- are
 **Đáp án:** have
 **Gợi ý:** Chủ ngữ gồm hai đối tượng "Tom and Jerry" tạo thành chủ ngữ số nhiều -> dùng trợ động từ "have".
 
 15. Have you ___ your breakfast?
-- have
-- had
-- having
-- has
 **Đáp án:** had
 **Gợi ý:** Phía trước đã có trợ động từ "Have", phía sau cần một động từ ở dạng quá khứ phân từ V3. V3 của động từ "have" là "had".
 
 16. She ___ written three books so far.
-- have
-- has
-- is
-- did
 **Đáp án:** has
 **Gợi ý:** Dấu hiệu "so far" (cho đến nay) đi với thì Hiện tại hoàn thành. Chủ ngữ số ít "She" đi với "has".
 
 17. I ___ finished. I need more time.
-- haven't
-- hasn't
-- didn't
-- don't
 **Đáp án:** haven't
 **Gợi ý:** Câu mang nghĩa phủ định hành động chưa hoàn thành ("Tôi chưa làm xong"), chủ ngữ "I" dùng "haven't".
 
 18. He has ___ his car. It looks new.
-- wash
-- washed
-- washing
-- washes
 **Đáp án:** washed
 **Gợi ý:** Cấu trúc S + has + V3. Động từ "wash" là động từ hợp quy tắc, thêm đuôi "-ed" thành "washed".
 
 19. ___ they ever visited London?
-- Have
-- Has
-- Did
-- Do
 **Đáp án:** Have
 **Gợi ý:** Trợ động từ đứng đầu câu hỏi kinh nghiệm số nhiều với chủ ngữ "they" phải là "Have".
 
 20. The train ___ just departed.
-- have
-- has
-- is
-- did
 **Đáp án:** has
 **Gợi ý:** "The train" là danh từ số ít vật -> đi kèm trợ động từ "has" cùng trạng từ "just".
 
 21. I've ___ my wallet at home.
-- leave
-- left
-- leaving
-- leaves
 **Đáp án:** left
 **Gợi ý:** Cấu trúc viết tắt "I've" tức là "I have". Theo sau cần một phân từ hai V3. V3 của "leave" là bất quy tắc: "left".
 
 22. She has been ill ___ Monday.
-- for
-- since
-- from
-- at
 **Đáp án:** since
 **Gợi ý:** "Monday" (Thứ Hai) là một mốc thời gian bắt đầu trong quá khứ -> chọn "since".
 
 23. We haven't seen him ___ a long time.
-- since
-- for
-- from
-- at
 **Đáp án:** for
 **Gợi ý:** Cụm từ "a long time" chỉ một khoảng thời gian dài -> chọn giới từ "for".
 
 24. ___ you done your project yet?
-- Have
-- Has
-- Did
-- Are
 **Đáp án:** Have
 **Gợi ý:** "you" đóng vai trò chủ ngữ ngôi thứ hai, kết hợp với phân từ hai "done" tạo thành câu hỏi Hiện tại hoàn thành bắt đầu bằng "Have".
 
 25. He has ___ to the same school all his life.
-- go
-- went
-- gone
-- going
 **Đáp án:** gone
 **Gợi ý:** Diễn tả hành động diễn ra suốt cuộc đời kéo dài đến nay. Sau "has" cần động từ ở cột 3 (V3). V3 của "go" là "gone".
 
 26. My parents ___ just come back from holiday.
-- has
-- have
-- is
-- did
 **Đáp án:** have
 **Gợi ý:** "My parents" (bố mẹ tôi) là danh từ số nhiều có đuôi '-s' nên chọn trợ động từ "have".
 
 27. I have ___ this book before.
-- read
-- red
-- reading
-- reads
 **Đáp án:** read
 **Gợi ý:** Động từ bất quy tắc "read" có dạng viết nguyên mẫu, V2, và V3 hoàn toàn giống nhau (đều viết là "read" nhưng V2/V3 phát âm giống từ "red").
 
 28. She ___ never tried Vietnamese food.
-- have
-- has
-- is
-- did
 **Đáp án:** has
 **Gợi ý:** Chủ ngữ ngôi thứ ba số ít "She" đi với cấu trúc "has + never + V3".
 
 29. Look! Someone ___ broken the vase.
-- have
-- has
-- is
-- had
 **Đáp án:** has
 **Gợi ý:** Đại từ bất định như "Someone", "Somebody" luôn luôn được tính là chủ ngữ số ít -> chọn trợ động từ "has".
 
 30. We ___ already eaten lunch.
-- has
-- have
-- did
-- are
 **Đáp án:** have
 **Gợi ý:** Chủ ngữ số nhiều "We" đi kèm trợ động từ "have" trong câu khẳng định có chứa "already".
 
@@ -964,3 +853,12 @@ My name is Mai. I (1. live) ___ in Hanoi all my life. I (2. be) ___ to many citi
 13. **have read** - Từ nhận biết tích lũy số lượng kết quả cho tới nay "so far" -> dùng hiện tại hoàn thành ngôi số nhiều.
 14. **have made** - Diễn tả nhận xét thành tựu đạt được tính đến hiện tại -> dùng cụm từ cố định "make progress" ở dạng hoàn thành "have made".
 15. **has been** - Chủ ngữ ngôi thứ ba số ít chỉ sự vật hiện tượng "It" đi kèm trợ động từ hoàn thành "has" + V3 "been".
+
+---
+
+## 🔗 Quay lại
+
+| [Bài tập](07-present-perfect-practice.md) | [Lý thuyết](06-present-perfect.md) | [Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+**Mẹo:** Hoàn thành bài tập trước khi xem đáp án. Cố gắng đạt ≥ 80% mới chuyển sang bài học tiếp theo.

@@ -4,79 +4,122 @@
 
 *Ngữ pháp - Thì #1 (Hiện tại đơn) - Đáp án & Giải thích*
 
-## A. Trắc nghiệm (Multiple Choice)
+---
 
-1. She ___ to the gym every morning.
-- **Đáp án:** goes
-- **Giải thích:** Chủ ngữ số ít "She" -> động từ thêm -s/-es (go -> goes).
+## 🔗 Điều hướng
 
-2. I ___ coffee in the morning.
-- **Đáp án:** drink
-- **Giải thích:** Chủ ngữ là "I", động từ giữ nguyên mẫu ở thì hiện tại đơn.
+| [← Lý thuyết](01-present-simple.md) | [← Bài tập](02-present-simple-practice.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
 
-3. My brother ___ like vegetables.
-- **Đáp án:** doesn't
-- **Giải thích:** Chủ ngữ số ít "My brother", câu phủ định dùng trợ động từ "doesn't" + V-inf.
+---
 
-4. ___ they live in Hanoi?
-- **Đáp án:** Do
-- **Giải thích:** Câu hỏi với chủ ngữ số nhiều "they", sử dụng trợ động từ "Do".
+## 📋 Đáp án & Giải thích
 
-5. Water ___ at 100 degrees Celsius.
-- **Đáp án:** boils
-- **Giải thích:** Diễn tả một sự thật hiển nhiên/khoa học, chủ ngữ "Water" không đếm được (số ít) -> thêm -s.
+**1.** She ___ to the gym every morning.
+- **✓ Đáp án:** goes
+- **💡 Giải thích:** Chủ ngữ số ít "She" → động từ thêm -s/-es (go → goes).
 
-6. We ___ English on Mondays.
-- **Đáp án:** study
-- **Giải thích:** Chủ ngữ số nhiều "We", động từ ở dạng nguyên mẫu.
+---
 
-7. He ___ a doctor.
-- **Đáp án:** is
-- **Giải thích:** Chủ ngữ số ít "He", đi với động từ tobe "is".
+**2.** I ___ coffee in the morning.
+- **✓ Đáp án:** drink
+- **💡 Giải thích:** Chủ ngữ là "I", động từ giữ nguyên mẫu ở thì hiện tại đơn.
 
-8. ___ your sister speak French?
-- **Đáp án:** Does
-- **Giải thích:** Câu hỏi với chủ ngữ số ít "your sister", dùng trợ động từ "Does".
+---
 
-9. The shop ___ at 9 a.m.
-- **Đáp án:** opens
-- **Giải thích:** Chủ ngữ số ít "The shop" chỉ lịch trình/thời gian biểu -> thêm -s.
+**3.** My brother ___ like vegetables.
+- **✓ Đáp án:** doesn't
+- **💡 Giải thích:** Chủ ngữ số ít "My brother", câu phủ định dùng trợ động từ "doesn't" + V-infinitive.
 
-10. They ___ TV in the evening.
-- **Đáp án:** watch
-- **Giải thích:** Chủ ngữ số nhiều "They", động từ giữ nguyên mẫu.
+---
 
-11. My father ___ to work by car.
-- **Đáp án:** goes
-- **Giải thích:** Chủ ngữ số ít "My father" -> động từ go thêm -es thành goes.
+**4.** ___ they live in Hanoi?
+- **✓ Đáp án:** Do
+- **💡 Giải thích:** Câu hỏi với chủ ngữ số nhiều "they", sử dụng trợ động từ "Do".
 
-12. I ___ understand this question.
-- **Đáp án:** don't
-- **Giải thích:** Câu phủ định với chủ ngữ "I", dùng trợ động từ phủ định "don't".
+---
 
-13. Cats ___ milk.
-- **Đáp án:** like
-- **Giải thích:** Chủ ngữ số nhiều "Cats" nói về sở thích chung -> động từ giữ nguyên mẫu.
+**5.** Water ___ at 100 degrees Celsius.
+- **✓ Đáp án:** boils
+- **💡 Giải thích:** Diễn tả một sự thật hiển nhiên/khoa học, chủ ngữ "Water" không đếm được (số ít) → thêm -s.
 
-14. She ___ her homework every day.
-- **Đáp án:** does
-- **Giải thích:** Chủ ngữ số ít "She" -> động từ do thêm -es thành does.
+---
 
-15. ___ you usually have breakfast?
-- **Đáp án:** Do
-- **Giải thích:** Câu hỏi đảo trợ động từ lên trước chủ ngữ "you" -> dùng "Do".
+**6.** We ___ English on Mondays.
+- **✓ Đáp án:** study
+- **💡 Giải thích:** Chủ ngữ số nhiều "We", động từ ở dạng nguyên mẫu.
 
-16. The Earth ___ around the Sun.
-- **Đáp án:** moves
-- **Giải thích:** Diễn tả chân lý/sự thật hiển nhiên, "The Earth" là số ít -> thêm -s.
+---
 
-17. He ___ happy today.
-- **Đáp án:** is
-- **Giải thích:** Cấu trúc S + tobe + adj. Chủ ngữ "He" đi với "is".
+**7.** He ___ a doctor.
+- **✓ Đáp án:** is
+- **💡 Giải thích:** Chủ ngữ số ít "He", đi với động từ to be "is".
 
-18. My friends ___ football on Sundays.
-- **Đáp án:** play
-- **Giải thích:** Chủ ngữ số nhiều "My friends", động từ giữ nguyên mẫu.
+---
+
+**8.** ___ your sister speak French?
+- **✓ Đáp án:** Does
+- **💡 Giải thích:** Câu hỏi với chủ ngữ số ít "your sister", dùng trợ động từ "Does".
+
+---
+
+**9.** The shop ___ at 9 a.m.
+- **✓ Đáp án:** opens
+- **💡 Giải thích:** Chủ ngữ số ít "The shop" chỉ lịch trình/thời gian biểu → thêm -s.
+
+---
+
+**10.** They ___ TV in the evening.
+- **✓ Đáp án:** watch
+- **💡 Giải thích:** Chủ ngữ số nhiều "They", động từ giữ nguyên mẫu.
+
+---
+
+**11.** My father ___ to work by car.
+- **✓ Đáp án:** goes
+- **💡 Giải thích:** Chủ ngữ số ít "My father" → động từ go thêm -es thành goes.
+
+---
+
+**12.** I ___ understand this question.
+- **✓ Đáp án:** don't
+- **💡 Giải thích:** Câu phủ định với chủ ngữ "I", dùng trợ động từ phủ định "don't".
+
+---
+
+**13.** Cats ___ milk.
+- **✓ Đáp án:** like
+- **💡 Giải thích:** Chủ ngữ số nhiều "Cats" nói về sở thích chung → động từ giữ nguyên mẫu.
+
+---
+
+**14.** She ___ her homework every day.
+- **✓ Đáp án:** does
+- **💡 Giải thích:** Chủ ngữ số ít "She" → động từ do thêm -es thành does.
+
+---
+
+**15.** ___ you usually have breakfast?
+- **✓ Đáp án:** Do
+- **💡 Giải thích:** Câu hỏi đảo trợ động từ lên trước chủ ngữ "you" → dùng "Do".
+
+---
+
+**16.** The Earth ___ around the Sun.
+- **✓ Đáp án:** moves
+- **💡 Giải thích:** Diễn tả chân lý/sự thật hiển nhiên, "The Earth" là số ít → thêm -s.
+
+---
+
+**17.** He ___ happy today.
+- **✓ Đáp án:** is
+- **💡 Giải thích:** Cấu trúc S + to be + adj. Chủ ngữ "He" đi với "is".
+
+---
+
+**18.** My friends ___ football on Sundays.
+- **✓ Đáp án:** play
+- **💡 Giải thích:** Chủ ngữ số nhiều "My friends", động từ giữ nguyên mẫu.
 
 19. She ___ tea; she prefers coffee.
 - **Đáp án:** doesn't like
@@ -571,3 +614,12 @@
 10. Cô ấy có phải là giáo viên không?
 - **Đáp án:** Is she a teacher?
 - **Giải thích:** Câu hỏi với động từ to be, đảo "Is" lên đầu câu trước chủ ngữ "she".
+
+---
+
+## 🔗 Quay lại
+
+| [Bài tập](02-present-simple-practice.md) | [Lý thuyết](01-present-simple.md) | [Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+**Mẹo:** Hoàn thành bài tập trước khi xem đáp án. Cố gắng đạt ≥ 80% mới chuyển sang bài học tiếp theo.
