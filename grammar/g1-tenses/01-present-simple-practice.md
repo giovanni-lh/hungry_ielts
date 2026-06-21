@@ -1,6 +1,17 @@
 # Present Simple — Hiện tại đơn (Bài tập)
 
-📚 [Thư viện](00-index.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md) • 🗺️ [Lộ trình](../../README.md)
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](01-present-simple.md) | [← Đáp án](01-present-simple-answer.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---
 
 *Ngữ pháp - Thì #1 (Hiện tại đơn) - Bài tập*
 
@@ -440,3 +451,16 @@ Tổng cộng 235 câu, chia làm nhiều dạng bài.
 *Đọc đoạn văn về một ngày của Nam và chia động từ trong ngoặc cho đúng.*
 
 Nam is a student. Every morning he ___ up at six o'clock. (get) He ___ his teeth and washes his face. (brush) Then he ___ breakfast with his family. (have) His mother always ___ a delicious meal. (cook) Nam ___ to school by bike. (go) School ___ at seven thirty. (start) He ___ many subjects, like Maths and English. (study) His best friend, Minh, ___ next to him. (sit) They ___ lunch together at noon. (eat) In the afternoon, Nam ___ football with his friends. (play) He usually ___ home at five o'clock. (come) After dinner, he ___ his homework. (do) He sometimes ___ TV before bed. (watch) His parents ___ early because they work hard. (sleep) Nam ___ his life very much. (love)
+
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](01-present-simple.md) | [← Đáp án](01-present-simple-answer.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---

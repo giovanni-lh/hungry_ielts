@@ -1,14 +1,14 @@
 # Present Simple — Hiện tại đơn (Đáp án)
 
-📚 [Thư viện](00-index.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md) • 🗺️ [Lộ trình](../../README.md)
+---
 
-*Ngữ pháp - Thì #1 (Hiện tại đơn) - Đáp án & Giải thích*
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
 
 ---
 
 ## 🔗 Điều hướng
 
-| [← Lý thuyết](01-present-simple.md) | [← Bài tập](02-present-simple-practice.md) | [← Tất cả bài học](00-index.md) |
+| [← Lý thuyết](01-present-simple.md) | [← Bài tập](01-present-simple-practice.md) | [← Tất cả bài học](00-index.md) |
 | :---: | :---: | :---: |
 
 ---
@@ -617,9 +617,13 @@
 
 ---
 
-## 🔗 Quay lại
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
 
-| [Bài tập](02-present-simple-practice.md) | [Lý thuyết](01-present-simple.md) | [Tất cả bài học](00-index.md) |
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](01-present-simple.md) | [← Bài tập](01-present-simple-practice.md) | [← Tất cả bài học](00-index.md) |
 | :---: | :---: | :---: |
 
-**Mẹo:** Hoàn thành bài tập trước khi xem đáp án. Cố gắng đạt ≥ 80% mới chuyển sang bài học tiếp theo.
+---

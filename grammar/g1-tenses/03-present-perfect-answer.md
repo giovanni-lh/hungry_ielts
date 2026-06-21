@@ -1,14 +1,14 @@
 # Present Perfect — Hiện tại hoàn thành (Đáp án)
 
-📚 [Thư viện](00-index.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md) • 🗺️ [Lộ trình](../../README.md)
+---
 
-*Ngữ pháp - Thì #3 (Hiện tại hoàn thành) - Đáp án & Giải thích*
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
 
 ---
 
 ## 🔗 Điều hướng
 
-| [← Lý thuyết](07-present-perfect.md) | [← Bài tập](07-present-perfect-practice.md) | [← Tất cả bài học](00-index.md) |
+| [← Lý thuyết](03-present-perfect.md) | [← Bài tập](03-present-perfect-practice.md) | [← Tất cả bài học](00-index.md) |
 | :---: | :---: | :---: |
 
 ---
@@ -856,9 +856,13 @@ My name is Mai. I (1. live) ___ in Hanoi all my life. I (2. be) ___ to many citi
 
 ---
 
-## 🔗 Quay lại
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
 
-| [Bài tập](07-present-perfect-practice.md) | [Lý thuyết](06-present-perfect.md) | [Tất cả bài học](00-index.md) |
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](03-present-perfect.md) | [← Bài tập](03-present-perfect-practice.md) | [← Tất cả bài học](00-index.md) |
 | :---: | :---: | :---: |
 
-**Mẹo:** Hoàn thành bài tập trước khi xem đáp án. Cố gắng đạt ≥ 80% mới chuyển sang bài học tiếp theo.
+---

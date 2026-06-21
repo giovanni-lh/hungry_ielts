@@ -1,14 +1,14 @@
 # Present Continuous — Hiện tại tiếp diễn (Đáp án)
 
-📚 [Thư viện](00-index.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md) • 🗺️ [Lộ trình](../../README.md)
+---
 
-*Ngữ pháp - Thì #2 (Hiện tại tiếp diễn) - Đáp án & Giải thích*
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
 
 ---
 
 ## 🔗 Điều hướng
 
-| [← Lý thuyết](04-present-continuous.md) | [← Bài tập](05-present-continuous-practice.md) | [← Tất cả bài học](00-index.md) |
+| [← Lý thuyết](02-present-continuous.md) | [← Bài tập](02-present-continuous-practice.md) | [← Tất cả bài học](00-index.md) |
 | :---: | :---: | :---: |
 
 ---
@@ -1038,9 +1038,13 @@ It is Sunday afternoon and the park is busy.
 
 ---
 
-## 🔗 Quay lại
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
 
-| [Bài tập](05-present-continuous-practice.md) | [Lý thuyết](04-present-continuous.md) | [Tất cả bài học](00-index.md) |
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](02-present-continuous.md) | [← Bài tập](02-present-continuous-practice.md) | [← Tất cả bài học](00-index.md) |
 | :---: | :---: | :---: |
 
-**Mẹo:** Hoàn thành bài tập trước khi xem đáp án. Cố gắng đạt ≥ 80% mới chuyển sang bài học tiếp theo.
+---

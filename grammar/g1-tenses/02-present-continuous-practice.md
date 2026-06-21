@@ -1,6 +1,17 @@
 # Present Continuous — Hiện tại tiếp diễn (Bài tập)
 
-📚 [Thư viện](00-index.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md) • 🗺️ [Lộ trình](../../README.md)
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](02-present-continuous.md) | [← Đáp án](02-present-continuous-answer.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---
 
 *Ngữ pháp - Thì #2 (Hiện tại tiếp diễn) - Bài tập*
 
@@ -610,3 +621,16 @@ A young couple 12. ___ a picnic on the grass. (have)
 The birds 13. ___ in the tall trees. (sing)
 I 14. ___ all of this from my window. (watch)
 Everyone 15. ___ the beautiful weather. (enjoy)
+
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](02-present-continuous.md) | [← Đáp án](02-present-continuous-answer.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---

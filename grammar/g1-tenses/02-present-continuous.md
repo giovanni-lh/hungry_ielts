@@ -1,6 +1,17 @@
 # Present Continuous — Thì Hiện tại tiếp diễn
 
-📚 [Thư viện](00-index.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md) • 🗺️ [Lộ trình](../../README.md)
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](02-present-continuous.md) | [← Bài tập](02-present-continuous-practice.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---
 
 *Ngữ pháp - Thì #2 (Hiện tại tiếp diễn)*
 
@@ -149,3 +160,16 @@ ightarrow$ "The number of users is increasing rapidly."
 > **⚠️ Cẩn thận:** Đừng dùng tiếp diễn với stative verbs, và đừng quên "to be".
 
 Sẵn sàng luyện tập? Hơn **230 câu bài tập** đủ nội dung đang chờ em: trắc nghiệm, viết dạng V-ing, viết câu phủ định/nghi vấn, sửa lỗi, sắp xếp, phân biệt với Hiện tại đơn, dịch câu... kèm **chấm điểm tự động** và giải thích chi tiết.
+
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](02-present-continuous.md) | [← Bài tập](02-present-continuous-practice.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---

@@ -1,6 +1,17 @@
 # Present Simple — Thì Hiện tại đơn
 
-📚 [Thư viện](00-index.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md) • 🗺️ [Lộ trình](../../README.md)
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Bài tập](01-present-simple-practice.md) | [← Đáp án](01-present-simple-answer.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---
 
 *Ngữ pháp - Thì #1 (Hiện tại đơn)*
 
@@ -112,3 +123,10 @@ Thang tần suất từ nhiều $\rightarrow$ ít: **always (100%) $\rightarrow$
 * **Writing Task 2:** nêu sự thật và quan điểm chung — *"Many students prefer online learning."*
 * **Câu chủ đề (topic sentence)** trong đoạn văn thường ở thì hiện tại đơn.
 * ⚠️ **Độ chính xác ngữ pháp (Grammatical Range & Accuracy)** bị trừ điểm nặng nếu liên tục quên `-s` ngôi thứ 3 — hãy luyện kỹ ở phần bài tập!
+
+## 🔗 Quay lại
+
+| [Bài tập](01-present-simple-practice.md) | [Đáp án](01-present-simple-answer.md) | [Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+**Mẹo:** Hoàn thành bài tập trước khi xem đáp án. Cố gắng đạt ≥ 80% mới chuyển sang bài học tiếp theo.

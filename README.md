@@ -1,6 +1,10 @@
 # Lộ trình học Tiếng Anh: B1 → IELTS Band 7 — Master Study Plan
 
-📚 [Thư viện (README)](README)
+---
+
+🗺️ [Lộ trình](README.md)
+
+---
 
 Tài liệu lộ trình chính thức của chương trình. Đây là nơi xem mình đang ở đâu, học gì tiếp theo, và theo dõi tiến độ build học liệu. Mọi thư mục con đều có README riêng; mọi mô-đun đều theo cùng một chuẩn (lý thuyết 9 mục + ~235 câu bài tập có đáp án & giải thích).
 
@@ -29,19 +33,6 @@ Chương trình gồm **9 trụ kỹ năng (pillars)** được xâu chuỗi qua
 | **Stage 4 — IELTS Band 6–7** | B2+ → Band 7 | Đủ 4 kỹ năng IELTS, từ vựng học thuật | Reading • Writing T1+T2 • Speaking • Vocabulary nâng cao • Idioms |
 
 **9 trụ kỹ năng:** Grammar • Vocabulary • Idioms • Phrasal Verbs • Pronunciation • Listening • Reading • Writing • Speaking.
-
-  NỀN TẢNG          CỦNG CỐ           VẬN DỤNG          IELTS BAND 6+7
-    (B1)            (B1+->B2)           (B2)              (B2+->7)
-Grammar  G1 ----------> G2 -> G3 ---------> G4 -> G5 --------------------->
-Vocab    core ----------------------------> academic / topic packs ------->
-Pronun.  basics -------------------------->
-PhrVerb  -------------------> common sets ------------------------------->
-Idioms   ---------------------------------> IELTS idioms ----------------->
-Listen.  -------------------> intro -----------------------> IELTS L1-4 --->
-Reading  ---------------------------------> intro ---------> IELTS passages ->
-Writing  --------------------------------------------> Task 1 -> Task 1 + Task 2
-Speaking -----------------------------------------------------> Part 1-3 ->
-
 
 ---
 
@@ -218,5 +209,9 @@ ightarrow$ G5 (mỗi cấp 1 thư mục, có `00-index.md` là tổng quan/hub):
 1. 🟩 **Câu bị động** - bài tập
 2. 🟩 **Mạo từ (a/an/the)** - bài tập
 3. ⬜ `03-modals` • 4. ⬜ `04-comparison` • 5. ⬜ `05-gerund-infinitive` • 6. ⬜ `06-inversion` • 7. ⬜ `07-noun-clauses`
-grammar_readme.txt
-Đang hiển thị grammar_readme.txt.
+
+---
+
+🗺️ [Lộ trình](../README.md)
+
+---

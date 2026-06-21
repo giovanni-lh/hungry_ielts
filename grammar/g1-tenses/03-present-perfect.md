@@ -1,6 +1,17 @@
 # Present Perfect — Thì Hiện tại hoàn thành
 
-📚 [Thư viện](00-index.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md) • 🗺️ [Lộ trình](../../README.md)
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](03-present-perfect.md) | [← Bài tập](03-present-perfect-practice.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---
 
 *Ngữ pháp - Thì #3 (Hiện tại hoàn thành)*
 
@@ -164,3 +175,16 @@ Hành động **bắt đầu lúc nào** và **tiếp tục tới bây giờ**.
 ---
 
 **Tóm tắt:** Present Perfect = have/has + V3. Dùng khi hành động trong quá khứ nhưng kết quả/ảnh hưởng còn tới hiện tại. Phân biệt với Past Simple: có dấu hiệu thời gian cụ thể (yesterday, ago, ...) → Past Simple; không có → Present Perfect.
+
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](03-present-perfect.md) | [← Bài tập](03-present-perfect-practice.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---

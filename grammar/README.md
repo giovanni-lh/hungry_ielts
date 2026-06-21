@@ -1,6 +1,10 @@
 # Grammar — Ngữ pháp
 
-📚 [Thư viện](README.md) • 🗺️ [Lộ trình học](../README.md)
+---
+
+🗺️ [Lộ trình](../README.md) • 📘 [Ngữ pháp](README.md)
+
+---
 
 Tổ chức theo cấp G1 $
 ightarrow$ G5 (mỗi cấp 1 thư mục, có `00-index.md` là tổng quan/hub):
@@ -33,3 +37,9 @@ ightarrow$ G5 (mỗi cấp 1 thư mục, có `00-index.md` là tổng quan/hub):
 1. 🟩 **Câu bị động** - bài tập
 2. 🟩 **Mạo từ (a/an/the)** - bài tập
 3. ⬜ `03-modals` • 4. ⬜ `04-comparison` • 5. ⬜ `05-gerund-infinitive` • 6. ⬜ `06-inversion` • 7. ⬜ `07-noun-clauses`
+
+---
+
+🗺️ [Lộ trình](../README.md) • 📘 [Ngữ pháp](README.md)
+
+---

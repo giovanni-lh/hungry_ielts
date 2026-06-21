@@ -1,6 +1,17 @@
 # Present Perfect — Hiện tại hoàn thành (Bài tập)
 
-📚 [Thư viện](00-index.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md) • 🗺️ [Lộ trình](../../README.md)
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](03-present-perfect.md) | [← Đán áp](03-present-perfect-answer.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---
 
 *Ngữ pháp - Thì #3 (Hiện tại hoàn thành) - Bài tập*
 
@@ -467,3 +478,16 @@ ightarrow$ ___
 *Đọc đoạn văn (Mai kể về cuộc sống tới nay) và chia "have/has + V3" cho đúng:*
 
 My name is Mai. I (1. live) ___ in Hanoi all my life. I (2. be) ___ to many cities in Vietnam. However, I (3. never / travel) ___ abroad yet. My brother (4. be) ___ to Singapore twice. He (5. take) ___ many photos there. This year, I (6. start) ___ a new hobby: cooking. I (7. learn) ___ a lot of new recipes recently. My mother (8. help) ___ me a lot. We (9. make) ___ many delicious dishes together. My best friend Lan (10. come) ___ to my house several times. She (11. try) ___ my food and likes it. I (12. improve) ___ my English a lot this year too. I (13. read) ___ many English books so far. My teacher says I (14. make) ___ great progress. It (15. be) ___ a wonderful year for me.
+
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md) • 🟡 [G1 - Nền tảng 12 thì](00-index.md)
+
+---
+
+## 🔗 Điều hướng
+
+| [← Lý thuyết](03-present-perfect.md) | [← Đán áp](03-present-perfect-answer.md) | [← Tất cả bài học](00-index.md) |
+| :---: | :---: | :---: |
+
+---
