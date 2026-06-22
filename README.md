@@ -63,7 +63,7 @@ Chương trình gồm **9 trụ kỹ năng (pillars)** được xâu chuỗi qua
 | **G2** | Phân biệt 8 cặp thì hay nhầm | 🟩 8 bài + 1.880 câu |
 | **G3** | Trộn 12 thì (5 mô-đun) | 🟩 5 bài + 1.175 câu |
 | **G4** | Câu phức & mệnh đề (thời gian, điều kiện 0–3 & hỗn hợp, wish, quan hệ, tường thuật, nối/viết lại câu) | 🟩 10/10 mô-đun + 2.350 câu |
-| **G5** | Cấu trúc nâng cao: bị động 🟩, mạo từ 🟩, modals, so sánh, gerund/infinitive, đảo ngữ, mệnh đề danh ngữ | 🟡 2/7 mô-đun + 470 câu — [chỉ mục](#) |
+| **G5** | Cấu trúc nâng cao: bị động 🟩, mạo từ 🟩, modals, so sánh, gerund/infinitive, đảo ngữ, mệnh đề danh ngữ | 🟡 2/7 mô-đun + 470 câu — [chỉ mục]() |
 
 ### 4.2. Vocabulary — Từ vựng → [vocabulary/README.md](vocabulary/README.md) ⬜
 Topic packs theo chủ đề IELTS (Education, Environment, Technology, Health, Work...), Academic Word List (AWL), collocations, word-formation. Mỗi pack: từ + nghĩa + ví dụ + collocation + bài tập.

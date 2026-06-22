@@ -1,7 +1,7 @@
 # 🌐 12 Thì Cơ Bản Trong Tiếng Anh — English Learning App
 
 ---
-🗺️ [Lộ trình học tập](../../README.md) • 📘 [Thư viện Ngữ pháp](../README.md) • 🚀 [Bảng xếp hạng](#)
+🗺️ [Lộ trình học tập](../../README.md) • 📘 [Thư viện Ngữ pháp](../README.md) • 🚀 [Bảng xếp hạng]()
 ---
 
 Tổng quan toàn bộ hệ thống thì (tenses) theo trục thời gian. Đây là "bản đồ" để em định vị mọi câu tiếng Anh. Các bài học tích hợp bên dưới sẽ đào sâu từng thì cốt lõi kèm bài tập thực hành tương tác trực tiếp.
@@ -22,14 +22,14 @@ Tổng quan toàn bộ hệ thống thì (tenses) theo trục thời gian. Đây
 ### 🟡 Nhóm Thì Quá Khứ (Past Tenses)
 5. **Past Simple (Quá khứ đơn)** 👉 [Bắt đầu Học & Luyện tập](05-past-simple.md)
 6. **Past Continuous (Quá khứ tiếp diễn)** 👉 [Bắt đầu Học & Luyện tập](06-past-continuous.md)
-7. **Past Perfect (Quá khứ hoàn thành)** 👉 [Bắt đầu Học & Luyện tập](07-past-perfect-continuous.md)
-8. **Past Perfect Continuous (Quá khứ hoàn thành tiếp diễn)** 👉 [Bắt đầu Học & Luyện tập](#)
+7. **Past Perfect (Quá khứ hoàn thành)** 👉 [Bắt đầu Học & Luyện tập](07-past-perfect.md)
+8. **Past Perfect Continuous (Quá khứ hoàn thành tiếp diễn)** 👉 [Bắt đầu Học & Luyện tập]()
 
 ### 🔵 Nhóm Thì Tương Lai (Future Tenses)
-9. **Future Simple (Tương lai đơn)** 👉 [Bắt đầu Học & Luyện tập](#)
-10. **Future Continuous (Tương lai tiếp diễn)** 👉 [Bắt đầu Học & Luyện tập](#)
-11. **Future Perfect (Tương lai hoàn thành)** 👉 [Bắt đầu Học & Luyện tập](#)
-12. **Future Perfect Continuous (Tương lai hoàn thành tiếp diễn)** 👉 [Bắt đầu Học & Luyện tập](#)
+9. **Future Simple (Tương lai đơn)** 👉 [Bắt đầu Học & Luyện tập]()
+10. **Future Continuous (Tương lai tiếp diễn)** 👉 [Bắt đầu Học & Luyện tập]()
+11. **Future Perfect (Tương lai hoàn thành)** 👉 [Bắt đầu Học & Luyện tập]()
+12. **Future Perfect Continuous (Tương lai hoàn thành tiếp diễn)** 👉 [Bắt đầu Học & Luyện tập]()
 
 ---
 
