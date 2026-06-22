@@ -8,9 +8,9 @@
 
 🎯 **Bài học trong cấp này**
 
-1. **Present Simple** — 📖 [Lý thuyết](01-present-simple.md) • 📝 [Bài tập](02-present-simple-practice.md) • ✅ [Đáp án](03-present-simple-answer.md)
-2. **Present Continuous** — 📖 [Lý thuyết](04-present-continuous.md) • 📝 [Bài tập](05-present-continuous-practice.md) • ✅ [Đáp án](05-present-continuous-answer.md)
-3. **Present Perfect** — 📖 [Lý thuyết](06-present-perfect.md) • 📝 [Bài tập](07-present-perfect-practice.md) • ✅ [Đáp án](07-present-perfect-answer.md)
+1. **Present Simple** — 📖 [Lý thuyết](01-present-simple.md) • 📝 [Bài tập](01-present-simple-practice.md) • ✅ [Đáp án](01-present-simple-answer.md)
+2. **Present Continuous** — 📖 [Lý thuyết](02-present-continuous.md) • 📝 [Bài tập](02-present-continuous-practice.md) • ✅ [Đáp án](02-present-continuous-answer.md)
+3. **Present Perfect** — 📖 [Lý thuyết](03-present-perfect.md) • 📝 [Bài tập](03-present-perfect-practice.md) • ✅ [Đáp án](03-present-perfect-answer.md)
 4. **Present Perfect Continuous** — 📖 [Lý thuyết](#) • 📝 [Bài tập](#) • ✅ [Đáp án](#)
 5. **Past Simple** — 📖 [Lý thuyết](#) • 📝 [Bài tập](#) • ✅ [Đáp án](#)
 6. **Past Continuous** — 📖 [Lý thuyết](#) • 📝 [Bài tập](#) • ✅ [Đáp án](#)
@@ -188,3 +188,9 @@ Hiểu ý nghĩa của 4 thể (aspect) là chìa khoá — nó lặp lại y h�
     * *The phone is ringing — I'll get it.* Điện thoại reo — để tôi nghe. (quyết định ngay)
 * **be going to**
     * *I'm going to visit Da Nang this summer.* Tôi định đi Đà Nẵng hè này. (kế hoạch đã có)
+
+---
+
+🗺️ [Lộ trình](../../README.md) • 📘 [Ngữ pháp](../README.md)
+
+---
